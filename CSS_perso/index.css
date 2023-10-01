@@ -1,0 +1,41 @@
+.navbar {
+  padding-top: 0;
+  .nav-link{
+    color: white;
+  }
+.nav-item{
+  margin-left:15px;
+  margin-right: 15px;
+}
+}
+
+.container-fluid {
+  background-color: rgb(49, 68, 85);
+  color: white;
+}
+
+#logoMorlaix {
+  width: 60%;
+}
+
+.recherch{
+  background-color: white;
+  border-radius: 15px;
+  .input_recherch{
+    border-radius: 15px;
+    border:none;
+    padding-left: 15px;
+  }
+  .input_recherch:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .recherch .fa{
+    font-size: 17px;
+  }
+  .recherch button{
+    border: none;
+    
+  }
+}
