@@ -1,3 +1,43 @@
+:root {
+  /*Palette de Couleurs*/
+  --c0: #404040;
+  --c1: #264653;
+  --c2: #2A9D8F;
+  --c3: #E9C46A;
+  --c4: #F4A261;
+  --c5: #E76F51;
+}
+
+/*Police d'écriture format pc*/
+.Ptxt {
+  font-size: 24px;
+}
+
+.Ptitle {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.Psection {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/*Police d'écriture format tél*/
+.Mtxt {
+  font-size: 24px;
+}
+
+.Mtitle {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.Msection {
+  font-size: 40px;
+  font-weight: bold;
+}
+
 body {
   margin: 0;
   padding: 0;
