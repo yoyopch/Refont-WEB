@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+
+/* Style de la navbar */
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  position: fixed;
+=======
 :root {
   /*Palette de Couleurs*/
   --c0: #404040;
@@ -40,6 +55,7 @@
 
 .navbar {
   padding-top: 0;
+>>>>>>> 1296e7ac07bb980ff6827f5eda605d5b58c9e98d
 
   .nav-link {
     color: white;
@@ -54,6 +70,7 @@
 .container-fluid {
   background-color: rgb(49, 68, 85);
   color: white;
+  letter-spacing: 0.5px;
 }
 
 #logoMorlaix {
@@ -83,5 +100,131 @@
   .recherch button {
     border: none;
 
+<<<<<<< HEAD
+  }
+}
+
+
+
+
+
+/* Style du bloc d'actu */
+.actu {
+  background-color: rgb(217, 217, 217);
+  margin-top: 2%;
+  display: block;
+
+  /* Alignement entre l'icone et le texte */
+  .texte {
+    display: flex;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .actus-bloc {
+    display: block;
+    
+
+    .top-actus {
+      display: flex;
+      height: 35%;
+      justify-content: space-evenly;
+
+      .top-actu-left {
+        width: 40%;
+        height: 100%;
+        position: relative;
+
+        .texte-actu {
+          background-color: rgb(86, 70, 70);
+          height: 35%;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          justify-content: space-evenly;
+        }
+
+      }
+
+      .top-actu-right {
+        background-image: url("../IMG/top-actu-2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 40%;
+        height: 100%;
+        position: relative;
+      }
+    }
+
+    .actu-bot{
+      display: flex;
+      height: 35%;
+      justify-content: space-evenly;
+      .actu-bot-info{
+        margin-top: 5%;
+        width: 25%;
+        height: 70%;
+        background-color: rgb(80, 74, 74);
+      }
+    }
+
+
+  }
+}
+
+
+
+
+
+
+footer {
+  background-color: rgb(64, 64, 64);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  width: 100%;
+
+  .info-top {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .info-abo {
+    text-align: center;
+
+    #button {
+      border-radius: 20px;
+      border: none;
+      color: white;
+      background-color: rgb(211, 117, 77);
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+
+  .reseau-ville {
+    display: block;
+
+    .logo {
+      display: flex;
+    }
+
+    .logo img {
+      margin-top: 5px;
+      margin-right: 20px;
+    }
+  }
+
+  .site-plan {
+    text-align: center;
+=======
+>>>>>>> 1296e7ac07bb980ff6827f5eda605d5b58c9e98d
   }
 }
