@@ -29,35 +29,31 @@ body {
 }
 
 #logoMorlaix {
-  width: 60%;
+  width: 50%;
 }
 
-.recherch {
-  background-color: white;
-  border-radius: 15px;
-
-  .input_recherch {
-    border-radius: 15px;
-    border: none;
-    padding-left: 15px;
-  }
-
-  .input_recherch:focus {
-    border: none;
-    outline: none;
-    box-shadow: none;
-  }
-
-  .recherch .fa {
-    font-size: 17px;
-  }
-
-  .recherch button {
-    border: none;
-
-  }
+.searchBox {
+  height: 30px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 0 10px 25px rgb(0, 0, 0, 0.3);
 }
-
+.searchBox input{
+  width: 200;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+.searchBox a .fas{
+  color:white;
+  font-size: 18px;
+}
 
 
 
@@ -80,7 +76,7 @@ body {
 
   .actus-bloc {
     display: block;
-    
+
 
     .top-actus {
       display: flex;
@@ -113,11 +109,12 @@ body {
       }
     }
 
-    .actu-bot{
+    .actu-bot {
       display: flex;
       height: 35%;
       justify-content: space-evenly;
-      .actu-bot-info{
+
+      .actu-bot-info {
         margin-top: 5%;
         width: 25%;
         height: 70%;
