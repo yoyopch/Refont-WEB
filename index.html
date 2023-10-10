@@ -34,6 +34,9 @@
             $("#info3").append(`<img src="./IMG/bot-actu3.jpg" alt="image-ecolo">`)
             $("#info3 img").css("width", "100%").css("height", "100%").css("object-fit", "cover");
 
+
+
+
             function createNavbar() {
                 $("header").html(`<nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -92,14 +95,16 @@
 
     </div>
 
+
+
     <div class="actu">
 
         <!-- Affichage du texte actu -->
-        <div class="texte">
+        <div class="title-section">
             <span class="material-symbols-outlined">
-        comment
-      </span>
-            <h4>Les actus</h4>
+            comment
+          </span>
+            <h3>Les actus</h3>
         </div>
 
         <!-- Grand bloc de toutes las actus -->
@@ -135,64 +140,78 @@
                 </div>
             </div>
         </div>
-        <div class="texte">
+        <div class="title-section">
             <h4 id="more-actus"></h4>
         </div>
     </div>
 
-    <div class="timeline">
-        <div class="title-section">
-            <span class="material-symbols-outlined">
+
+    <div class="post-actu">
+
+
+
+        <div class="timeline">
+            <div class="title-section">
+                <span class="material-symbols-outlined">
             calendar_add_on
             </span>
-            <h3>Agenda</h3>
+                <h3>Agenda</h3>
+            </div>
+            <!-- Premier point -->
+            <div class="point-timeline complete">
+                <div class="status-timeline">
+
+                </div>
+                <div class="contenu-agenda">
+                    <h4>24 sep</h4>
+                    <span>Le patrimoine se dévoile pour les Journées Européennes...</span>
+                </div>
+            </div>
+
+            <!-- Deuxime point -->
+            <div class="point-timeline complete">
+                <div class="status-timeline">
+
+                </div>
+                <div class="contenu-agenda">
+                    <h4>29 sep</h4>
+                    <span>Mx Arts Tour 2023 : le street art s'affiche en grand dans nos communes !</span>
+                </div>
+            </div>
+
+            <!-- Troisième point -->
+            <div class="point-timeline complete">
+                <div class="status-timeline">
+
+                </div>
+                <div class="contenu-agenda">
+                    <h4>30 sep</h4>
+                    <span>Le patrimoine se dévoile pour les journées Européennes...</span>
+                </div>
+            </div>
+
+            <!-- Quatrième point -->
+            <div class="point-timeline ">
+                <div class="status-timeline">
+
+                </div>
+                <div class="contenu-agenda">
+                    <h4>2 oct</h4>
+                    <span>Le patrimoine se dévoile pour les Journées Européennes...</span>
+                </div>
+            </div>
+
         </div>
-        <!-- Premier point -->
-        <div class="point-timeline complete">
-            <div class="status-timeline">
 
-            </div>
-            <div class="contenu-agenda">
-                <h4>24 sep</h4>
-                <span>Le patrimoine se dévoile pour les Journées Européennes...</span>
-            </div>
-        </div>
-
-        <!-- Deuxime point -->
-        <div class="point-timeline complete">
-            <div class="status-timeline">
-
-            </div>
-            <div class="contenu-agenda">
-                <h4>29 sep</h4>
-                <span>Mx Arts Tour 2023 : le street art s'affiche en grand dans nos communes !</span>
+        <div class="carte-commune">
+            <div class="title-section">
+                <span class="material-symbols-outlined">
+                map
+                </span>
+                <h3>Cartes des communes</h3>
             </div>
         </div>
-
-        <!-- Troisième point -->
-        <div class="point-timeline complete">
-            <div class="status-timeline">
-
-            </div>
-            <div class="contenu-agenda">
-                <h4>30 sep</h4>
-                <span>Le patrimoine se dévoile pour les journées Européennes...</span>
-            </div>
-        </div>
-
-        <!-- Quatrième point -->
-        <div class="point-timeline ">
-            <div class="status-timeline">
-
-            </div>
-            <div class="contenu-agenda">
-                <h4>2 oct</h4>
-                <span>Le patrimoine se dévoile pour les Journées Européennes...</span>
-            </div>
-        </div>
-
     </div>
-
 
 
     <footer>

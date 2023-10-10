@@ -103,28 +103,31 @@ body {
 }
 
 
+/* Style des titres section */
+
+.title-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
 /* Style du bloc d'actu */
 
 .actu {
     background-color: rgb(217, 217, 217);
     margin-top: 2%;
     display: block;
+    margin-bottom: 15px;
 }
 
 
 /* Alignement entre l'icone et le texte */
 
-.texte {
-    display: flex;
-    font-size: medium;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
 .actus-bloc {
     display: block;
+    margin-top: 15px;
 }
 
 .top-actus {
@@ -227,21 +230,18 @@ footer {
     color: white;
 }
 
+.post-actu {
+    display: flex;
+}
+
 
 /* Style de l'agenda */
 
-.title-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-}
-
 .timeline {
-    width: 40%;
-    margin-left: 10%;
+    width: 49%;
     background-color: rgb(217, 217, 217);
     padding-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .point-timeline {
@@ -280,4 +280,13 @@ footer {
 
 .contenu-agenda {
     margin-left: 15px;
+}
+
+
+/* Style de la carte de la commune */
+
+.carte-commune {
+    width: 49%;
+    margin-left: 2%;
+    background-color: rgb(217, 217, 217);
 }
