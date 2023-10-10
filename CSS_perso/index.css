@@ -61,11 +61,16 @@ body {
 .nav-link {
     color: white;
 }
-
+.nav-link:hover {
+    color: white;
+    text-decoration: none;
+}
 .nav-item {
     margin-left: 15px;
     margin-right: 15px;
 }
+
+
 
 .container-fluid {
     background-color: rgb(49, 68, 85);

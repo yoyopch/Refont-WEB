@@ -17,7 +17,15 @@ $(document).ready(function() {
     $("#info3 img").css("width", "100%").css("height", "100%").css("object-fit", "cover");
 
 
-
+    $(".top-actu-left").hover(
+      function() {
+      $(this).html("").css('background-color', 'rgb(86, 70, 70)').
+      $(this).css("width", "40%").css("height", "100%");
+  },
+  function() {
+      $(this).html("").append(`<img src="./IMG/top-actu-1.jpg" alt="image-ecolo">`)
+      $(".top-actu-left img").css("width", "100%").css("height", "100%").css("object-fit", "cover");
+  })
 
     function createNavbar() {
         $("header").html(`<nav class="navbar navbar-expand-lg bg-body-tertiary">
