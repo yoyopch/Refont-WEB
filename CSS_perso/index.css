@@ -173,11 +173,12 @@ body {
     background-color: rgb(80, 74, 74);
 }
 
+
+/* Style du footer */
+
 footer {
     background-color: rgb(64, 64, 64);
-    bottom: 0;
-    left: 0;
-    right: 0;
+    margin: 0;
     color: white;
     width: 100%;
 }
@@ -232,6 +233,7 @@ footer {
 
 .post-actu {
     display: flex;
+    margin-bottom: 10px;
 }
 
 
@@ -241,7 +243,6 @@ footer {
     width: 49%;
     background-color: rgb(217, 217, 217);
     padding-bottom: 50px;
-    margin-bottom: 10px;
 }
 
 .point-timeline {

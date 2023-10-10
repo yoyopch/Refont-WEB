@@ -50,6 +50,18 @@ aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation
     }
 
 
+
+    $(".contenu-agenda span").hover( //fonctionnement alterné du survol (mouseout,moseover) → 2 fonctions
+        function() {
+            $(this).css({ 'font-weight': 'bolder' });
+        },
+        function() {
+            var cssObj = { 'font-weight': '', 'color': 'black' }
+            $(this).css(cssObj);
+        }
+    );
+
+
     var moreActus = $("#more-actus")
     moreActus.text("+ d'actus");
     moreActus.on("click", moreActua);
