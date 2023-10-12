@@ -1,0 +1,126 @@
+/* Style de la navbar */
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+    position: static;
+}
+
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    color: white;
+    text-decoration: none;
+}
+.nav-item {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+
+.container-fluid {
+    background-color: rgb(49, 68, 85);
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+#logoMorlaix {
+    width: 50%;
+}
+
+.searchBox {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.3);
+}
+
+.searchBox input {
+    width: 200;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.searchBox a .fas {
+    color: white;
+    font-size: 18px;
+}
+
+
+
+/* Style du footer */
+
+footer {
+    background-color: rgb(64, 64, 64);
+    margin: 0;
+    color: white;
+    width: 100%;
+}
+
+.info-top {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.infos-ville a {
+    text-decoration: none;
+    color: white;
+}
+
+.info-abo {
+    text-align: center;
+}
+
+#button {
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(211, 117, 77);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.reseau-ville {
+    display: block;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.site-plan {
+    text-align: center;
+}
+
+.site-plan a {
+    text-decoration: none;
+    color: white;
+}
+.site-plan p{
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.post-actu {
+    display: flex;
+    margin-bottom: 10px;
+}
+
