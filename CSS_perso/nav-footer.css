@@ -1,35 +1,49 @@
 /* Style de la navbar */
 
+
 .navbar {
-    padding-top: 0;
-    padding-bottom: 0;
+    display: flex;
+    flex-wrap: nowrap;
     width: 100%;
-    position: static;
+    box-sizing: border-box;
+    align-items: center;
+    height: 60px;
+    background-color: #264653;
+
 }
 
-.nav-link {
-    color: white;
+.navbar a img {
+    width: 110px;
+    margin-left: 20px;
 }
-.nav-link:hover {
-    color: white;
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links ul li {
+    list-style: none;
+}
+
+.nav-links ul li a {
     text-decoration: none;
-}
-.nav-item {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-
-
-.container-fluid {
-    background-color: rgb(49, 68, 85);
+    padding-left: 40px;
     color: white;
-    letter-spacing: 0.5px;
 }
 
-#logoMorlaix {
-    width: 50%;
+.navbar .nav-links ul {
+    display: flex;
+
 }
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+
+}
+
+
+
 
 .searchBox {
     height: 30px;
@@ -51,10 +65,58 @@
     background: transparent;
 }
 
-.searchBox a .fas {
-    color: white;
-    font-size: 18px;
+
+
+.navbar .menu-hamburger {
+    display: none;
+    width: 35px;
+    position: absolute;
+    right: 10px;
 }
+
+@media screen and (max-width : 1200px) {
+
+    .navbar .menu-hamburger {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        background-color: #264653;
+        width: 100%;
+    }
+  
+
+    .nav-links ul {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-links ul li{
+        text-align: center;
+    }
+    .divSearch{
+        display: none;
+        background-color: #264653;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+    .searchBox{
+        width: 30%;
+        margin: auto;
+    }
+
+}
+
 
 
 
@@ -114,13 +176,13 @@ footer {
     text-decoration: none;
     color: white;
 }
-.site-plan p{
-  margin: 0;
-  padding-bottom: 15px;
+
+.site-plan p {
+    margin: 0;
+    padding-bottom: 15px;
 }
 
 .post-actu {
     display: flex;
     margin-bottom: 10px;
 }
-

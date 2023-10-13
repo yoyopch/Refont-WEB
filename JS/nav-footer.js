@@ -1,39 +1,60 @@
-$(document).ready(function() {
-    createNavbar();
-    creaetFooter();
-
-    function createNavbar() {
-        $("header").html(`<nav class="navbar navbar-expand-lg bg-body-tertiary">
-<div class="container-fluid">
-<a class="navbar-brand" href="./index.html"><img src="../IMG/logo/logo.png" alt="Morlaix Communauté" id="logoMorlaix"></a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarScroll">
-<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll mx-auto" style="--bs-scroll-height: 100px;">
-  <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="./services.html">Services publics</a>
-  </li>
-  <li class="nav-item"> <a class="nav-link" href="#">Domaines d\'actions</a>
-  </li>
-  <li class="nav-item"> <a class="nav-link" href="#">Grands projets</a> </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Equipements</a>
-  </li>
-</ul>
-<div class="searchBox">
-  <input class="input_recherch" type="text" placeholder="Rechercher.." name="search">
-  <a href="#">
-    <i class="fas fa-search"></i>
-  </a>
-</div>
-</div>
-</nav>`);
+$(document).ready(function () {
+  createNavBar();
+  createFooter();
+  var navbarResp = 0;
+  $('img[alt="logo-hamburger"]').on("click", function () {
+    if (navbarResp == 0) {
+      // quand on appuie sur le bouton pour afficher les sous-menu
+      $(".nav-links").css("display", "flex");
+      $(".divSearch").css("display", "flex");
+      $(".video").css("padding-top", "160px");
+      navbarResp = 1;
+    } else {
+      // quand on rapuie sur le bouton pour enlever les sous-menu
+      $(".nav-links").css("display", "none");
+      $(".divSearch").css("display", "none");
+      $(".video").css("padding-top", "0px");
+      navbarResp = 0;
     }
-    
-    function creaetFooter(){
-      $("footer").html(`<div class="info-top">
+  })
+
+  $(window).on("resize", function () {
+    if ($(window).width() > 1200) {
+      if (navbarResp == 1) {
+        $(".video").css("padding-top", "0px");
+      }
+
+    } else {
+      if (navbarResp == 1) {
+        $(".video").css("padding-top", "160px");
+      }
+    }
+  })
+
+function createNavBar(){
+  $("header").html(`<!-- Navbar du site -->
+  <nav class="navbar">
+    <a href="./index.html"><img src="./IMG/logo/logo.png" alt="MorlaixCommunauté"></a>
+    <div class="nav-links">
+      <ul>
+        <li><a href="#">Communauté</a></li>
+        <li><a href="#">Domaine d'action</a></li>
+        <li><a href="#">Grands projets</a></li>
+        <li><a href="#">Equipements</a></li>
+      </ul>
+    </div>
+    <div class="divSearch">
+      <div class="searchBox">
+        <input class="input_recherch" type="text" placeholder="Rechercher.." name="search">
+      </div>
+    </div>
+
+    <img src="./IMG/logo/logo-hamburger.png" alt="logo-hamburger" class="menu-hamburger">
+
+  </nav>`)
+}
+  function createFooter() {
+    $("footer").html(`<div class="info-top">
       <div class="infos-ville">
         <h4>Morlaix Communauté</h4>
         <p><a
@@ -73,7 +94,7 @@ aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation
           href="#">Données personnelles</a> | <a href="#">Accessibilité</a>
       </p>
     </div>`)
-    }
+  }
 
 
 
