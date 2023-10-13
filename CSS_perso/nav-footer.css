@@ -74,8 +74,10 @@
     right: 10px;
 }
 
-@media screen and (max-width : 1200px) {
+@media screen and (max-width : 1266px) {
 
+
+    /* responsive de la navbar */
     .navbar .menu-hamburger {
         display: block;
     }
@@ -91,7 +93,7 @@
         background-color: #264653;
         width: 100%;
     }
-  
+
 
     .nav-links ul {
         display: flex;
@@ -100,19 +102,41 @@
         align-items: center;
         justify-content: center;
     }
-    .nav-links ul li{
+
+    .nav-links ul li {
         text-align: center;
     }
-    .divSearch{
+
+    .divSearch {
         display: none;
         background-color: #264653;
         width: 100%;
         padding-top: 5px;
         padding-bottom: 20px;
     }
-    .searchBox{
+
+    .searchBox {
         width: 30%;
         margin: auto;
+    }
+
+
+
+    /* responsive du footer */
+
+    .info-top {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-top div {
+        padding-bottom: 30px;
     }
 
 }

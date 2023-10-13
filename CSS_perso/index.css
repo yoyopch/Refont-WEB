@@ -168,6 +168,42 @@ body {
     margin-left: 15px;
 }
 
+@media screen and (max-width:1266px) {
+
+    /* responsive de l'agenda */
+    .point-timeline.complete::after {
+        height: 115px;
+        top: 44px;
+    }
+
+    .status-timeline {
+        height: 28px;
+        width: 28px;
+        margin-left: 10px;
+        z-index: 9990;
+    }
+
+    .post-actu {
+        display: block;
+    }
+
+    .timeline {
+        width: 100%;
+    }
+
+    .carte-commune {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:511px) {
+
+    /* responsive de l'agenda */
+    .point-timeline.complete::after {
+        height: 125px;
+    }
+
+}
 
 /* Style de la carte de la commune */
 
