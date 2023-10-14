@@ -168,6 +168,28 @@ body {
     margin-left: 15px;
 }
 
+
+/* Style de la carte de la commune */
+
+.carte-commune {
+    width: 49%;
+    margin-left: 2%;
+    background-color: rgb(217, 217, 217);
+}
+
+
+
+@media screen and (max-width:511px) {
+
+    /* responsive de l'agenda */
+    .point-timeline.complete::after {
+        height: 125px;
+    }
+
+}
+
+
+
 @media screen and (max-width:1266px) {
 
     /* responsive de l'agenda */
@@ -189,6 +211,8 @@ body {
 
     .carte-commune {
         width: 100%;
+        margin-left: 0;
+        margin-top:15px;
     }
 
     .timeline {
@@ -196,21 +220,4 @@ body {
     }
 
 
-}
-
-@media screen and (max-width:511px) {
-
-    /* responsive de l'agenda */
-    .point-timeline.complete::after {
-        height: 125px;
-    }
-
-}
-
-/* Style de la carte de la commune */
-
-.carte-commune {
-    width: 49%;
-    margin-left: 2%;
-    background-color: rgb(217, 217, 217);
 }

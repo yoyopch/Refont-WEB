@@ -19,28 +19,82 @@
 
 .nav-links {
     display: flex;
-    justify-content: space-around;
 }
 
-.nav-links ul li {
+.nav-links .ss_menu li {
     list-style: none;
+    margin-left: 100px;
 }
 
-.nav-links ul li a {
+.nav-links .ss_menu li a {
     text-decoration: none;
-    padding-left: 40px;
     color: white;
+    text-align: center;
 }
 
-.navbar .nav-links ul {
+.navbar .nav-links .ss_menu {
     display: flex;
 
 }
 
-.navbar .nav-links ul li {
-    margin: 0 25px;
 
+
+
+/* Style des sous-menus */
+
+
+/* Masquer le sous-menu par défaut */
+/* .sm_communaute,
+.sortir_et_bouger,
+.cadre_vie {
+    display: none;
+} */
+
+
+/* Afficher le sous-menu lorsqu'on survole "Communauté" */
+/* .comm:hover*/ .sm_communaute, 
+/* .domaine:hover*/ .sortir_et_bouger, 
+/* .proj:hover*/ .cadre_vie { 
+    display: block;
+    z-index: 999;
+    position: absolute;
+    padding-left: 0;
+    background-color: #264653;
+    /* Ajoutez la couleur de fond souhaitée */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Ajoutez de l'ombre si désiré */
 }
+
+
+
+/* Style pour les éléments du sous-menu */
+.sm_communaute li,
+.sortir_et_bouger li,
+.cadre_vie li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 2;
+}
+
+.sm_communaute li a,
+.sortir_et_bouger li a,
+.cadre_vie li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    /* Couleur du texte */
+}
+
+.sm_communaute li a:hover,
+.sortir_et_bouger li a:hover,
+.cadre_vie li a:hover {
+    background-color: #2e5768;
+    /* Couleur de fond au survol */
+}
+
 
 
 
@@ -57,7 +111,7 @@
 }
 
 .searchBox input {
-    width: 200;
+    width: 100%;
     outline: none;
     border: none;
     font-weight: 500;
@@ -95,7 +149,7 @@
     }
 
 
-    .nav-links ul {
+    .nav-links .ss_menu {
         display: flex;
         padding: 0;
         flex-direction: column;
@@ -103,9 +157,15 @@
         justify-content: center;
     }
 
-    .nav-links ul li {
+    .nav-links .ss_menu li {
         text-align: center;
     }
+
+    .nav-links .ss_menu li a {
+        padding-left: 0;
+    }
+
+
 
     .divSearch {
         display: none;
@@ -116,9 +176,10 @@
     }
 
     .searchBox {
-        width: 30%;
+        width: 40%;
         margin: auto;
     }
+
 
 
 

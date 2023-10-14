@@ -1,38 +1,45 @@
 $(document).ready(function () {
-  createNavBar();
+  //createNavBar();
   createFooter();
   var navbarResp = 0;
+
+  $(window).on("resize", function () {
+    if ($(window).width() > 1200) {
+      //quand la taille de l'écran depasse 1200px 
+      $(".video").css("padding-top", "0px");
+      $(".nav-links").css("display", "flex");
+      $(".divSearch").css("display", "flex");
+
+    } else {
+
+      if ($(".nav-links").css("display") == "flex") {
+        $(".video").css("padding-top", "160px");
+      }
+
+
+    }
+  })
+
   $('img[alt="logo-hamburger"]').on("click", function () {
-    if (navbarResp == 0) {
+    if ($(".video").css("padding-top") == "0px") {
       // quand on appuie sur le bouton pour afficher les sous-menu
       $(".nav-links").css("display", "flex");
       $(".divSearch").css("display", "flex");
       $(".video").css("padding-top", "160px");
-      navbarResp = 1;
     } else {
       // quand on rapuie sur le bouton pour enlever les sous-menu
       $(".nav-links").css("display", "none");
       $(".divSearch").css("display", "none");
       $(".video").css("padding-top", "0px");
-      navbarResp = 0;
     }
   })
 
-  $(window).on("resize", function () {
-    if ($(window).width() > 1200) {
-      if (navbarResp == 1) {
-        $(".video").css("padding-top", "0px");
-      }
 
-    } else {
-      if (navbarResp == 1) {
-        $(".video").css("padding-top", "160px");
-      }
-    }
-  })
 
-function createNavBar(){
-  $("header").html(`<!-- Navbar du site -->
+
+
+  function createNavBar() {
+    $("header").html(`<!-- Navbar du site -->
   <nav class="navbar">
     <a href="./index.html"><img src="./IMG/logo/logo.png" alt="MorlaixCommunauté"></a>
     <div class="nav-links">
@@ -52,7 +59,7 @@ function createNavBar(){
     <img src="./IMG/logo/logo-hamburger.png" alt="logo-hamburger" class="menu-hamburger">
 
   </nav>`)
-}
+  }
   function createFooter() {
     $("footer").html(`<div class="info-top">
       <div class="infos-ville">
