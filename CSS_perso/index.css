@@ -184,16 +184,18 @@ body {
     }
 
     .post-actu {
-        display: block;
+        display: grid;
+    }
+
+    .carte-commune {
+        width: 100%;
     }
 
     .timeline {
         width: 100%;
     }
 
-    .carte-commune {
-        width: 100%;
-    }
+
 }
 
 @media screen and (max-width:511px) {
