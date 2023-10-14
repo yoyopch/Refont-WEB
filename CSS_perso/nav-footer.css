@@ -21,78 +21,55 @@
     display: flex;
 }
 
-.nav-links .ss_menu li {
-    list-style: none;
-    margin-left: 100px;
-}
-
-.nav-links .ss_menu li a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-}
-
-.navbar .nav-links .ss_menu {
-    display: flex;
-
-}
 
 
-
-
-/* Style des sous-menus */
-
-
-/* Masquer le sous-menu par défaut */
-/* .sm_communaute,
-.sortir_et_bouger,
-.cadre_vie {
+.nav-links ul ul {
     display: none;
-} */
-
-
-/* Afficher le sous-menu lorsqu'on survole "Communauté" */
-/* .comm:hover*/ .sm_communaute, 
-/* .domaine:hover*/ .sortir_et_bouger, 
-/* .proj:hover*/ .cadre_vie { 
-    display: block;
-    z-index: 999;
     position: absolute;
-    padding-left: 0;
     background-color: #264653;
-    /* Ajoutez la couleur de fond souhaitée */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Ajoutez de l'ombre si désiré */
+    padding: 0;
+    z-index: 999;
+    top: 100%;
+    left: 0;
+    text-align: center;
 }
 
-
-
-/* Style pour les éléments du sous-menu */
-.sm_communaute li,
-.sortir_et_bouger li,
-.cadre_vie li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
+.nav-links ul li {
     line-height: 2;
 }
 
-.sm_communaute li a,
-.sortir_et_bouger li a,
-.cadre_vie li a {
+.nav-links ul li:hover ul {
     display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    /* Couleur du texte */
 }
 
-.sm_communaute li a:hover,
-.sortir_et_bouger li a:hover,
-.cadre_vie li a:hover {
-    background-color: #2e5768;
-    /* Couleur de fond au survol */
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 100px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.nav-links ul ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links ul ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.nav-links ul ul li:hover {
+    background-color: #356274;
 }
 
 
@@ -149,7 +126,7 @@
     }
 
 
-    .nav-links .ss_menu {
+    .nav-links .ul {
         display: flex;
         padding: 0;
         flex-direction: column;
@@ -157,11 +134,11 @@
         justify-content: center;
     }
 
-    .nav-links .ss_menu li {
+    .nav-links .ul li {
         text-align: center;
     }
 
-    .nav-links .ss_menu li a {
+    .nav-links .ul li a {
         padding-left: 0;
     }
 
