@@ -22,7 +22,6 @@
 }
 
 
-
 .nav-links ul ul {
     display: none;
     position: absolute;
@@ -74,8 +73,6 @@
 
 
 
-
-
 .searchBox {
     height: 30px;
     display: flex;
@@ -107,7 +104,6 @@
 
 @media screen and (max-width : 1266px) {
 
-
     /* responsive de la navbar */
     .navbar .menu-hamburger {
         display: block;
@@ -119,52 +115,42 @@
         align-items: center;
     }
 
-    .navbar a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .nav-links {
-        display: flex;
-        justify-content: center;
-        background-color: #264653;
+        display: block;
         width: 100%;
+        background-color: #264653;
     }
-
 
     .nav-links ul {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
+
     }
 
     .nav-links ul li {
-        text-align: center;
-        margin-right: 0;
+        margin: 0;
+        margin-top: 5px;
     }
 
-    .nav-links .ul li a {
-        padding-left: 0;
+    .nav-links ul ul {
+        display: none !important;
     }
-
-
-
+    .nav-links ul li:hover ul {
+        display: block !important;
+    }
     .divSearch {
         display: none;
-        background-color: #264653;
-        width: 100%;
-        padding-top: 5px;
         padding-bottom: 20px;
     }
 
     .searchBox {
-        width: 40%;
-        margin: auto;
+        width: 30%;
+        display: none;
+        margin-left: 35%;
+        margin-right: 35%;
+
     }
-
-
-
 
     /* responsive du footer */
 

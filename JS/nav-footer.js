@@ -1,35 +1,44 @@
 $(document).ready(function () {
   createNavBar();
   createFooter();
-  var navbarResp = 0;
 
-  $(window).on("resize", function () {
-    if ($(window).width() > 1200) {
+  /*$(window).on("resize", function () {
+    if ($(window).width() > 1267) {
       //quand la taille de l'écran depasse 1200px 
-      $(".video").css("padding-top", "0px");
+      $(".navbar").css("display","flex");
       $(".nav-links").css("display", "flex");
-      $(".divSearch").css("display", "flex");
-
+      $(".nav-links ul ul").css("display", "none");
+      $(".nav-links ul li:hover ul").css("display", "block");
+      $(".video").css("padding-top","0");
     } else {
 
-      if ($(".nav-links").css("display") == "flex") {
-        $(".video").css("padding-top", "160px");
-      }
 
+      $(".nav-links").css("display", "none");
+      $(".nav-links ul").css("display", "none");
+      $(".divSearch").css("display", "none");
+      $(".searchBox").css("display", "none");
+      $(".video").css("padding-top", "0px");
 
     }
-  })
+  }
+  )*/
+
 
   $('img[alt="logo-hamburger"]').on("click", function () {
     if ($(".video").css("padding-top") == "0px") {
       // quand on appuie sur le bouton pour afficher les sous-menu
-      $(".nav-links").css("display", "flex");
+      $(".nav-links").css("display", "block");
+      $(".nav-links ul").css("display", "flex");
       $(".divSearch").css("display", "flex");
-      $(".video").css("padding-top", "160px");
+      $(".searchBox").css("display", "flex");
+      $(".video").css("padding-top", "150px");
+
     } else {
       // quand on rapuie sur le bouton pour enlever les sous-menu
       $(".nav-links").css("display", "none");
+      $(".nav-links ul").css("display", "none");
       $(".divSearch").css("display", "none");
+      $(".searchBox").css("display", "none");
       $(".video").css("padding-top", "0px");
     }
   })
@@ -72,12 +81,13 @@ $(document).ready(function () {
           </ul>
         </li>
       </ul>
-    </div>
-    <div class="divSearch">
-      <div class="searchBox">
-        <input class="input_recherch" type="text" placeholder="Rechercher.." name="search">
+      <div class="divSearch">
+        <div class="searchBox">
+          <input class="input_recherch" type="text" placeholder="Rechercher.." name="search">
+        </div>
       </div>
     </div>
+    
 
     <img src="./IMG/logo/logo-hamburger.png" alt="logo-hamburger" class="menu-hamburger">
 
