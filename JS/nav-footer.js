@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  //createNavBar();
+  createNavBar();
   createFooter();
   var navbarResp = 0;
 
@@ -40,14 +40,37 @@ $(document).ready(function () {
 
   function createNavBar() {
     $("header").html(`<!-- Navbar du site -->
-  <nav class="navbar">
+    <nav class="navbar">
     <a href="./index.html"><img src="./IMG/logo/logo.png" alt="MorlaixCommunauté"></a>
     <div class="nav-links">
-      <ul>
-        <li><a href="#">Communauté</a></li>
-        <li><a href="#">Domaine d'action</a></li>
-        <li><a href="#">Grands projets</a></li>
-        <li><a href="#">Equipements</a></li>
+      <ul >
+        <li ><a href="#">La Communauté</a>
+          <ul>
+            <li><a href="#">Présentation</a></li>
+            <li><a href="#">Histoire</a></li>
+            <li><a href="services.html">Services publics</a></li>
+            <li><a href="#">Territoire</a></li>
+          </ul>
+        </li>
+        <li ><a href="#">Sortir et Bouger</a>
+          <ul>
+            <li><a href="#">Les Espaces Sociaux Culturels</a></li>
+            <li><a href="#">Vie sportive</a></li>
+            <li><a href="#">Vacances</a></li>
+            <li><a href="#">Activités et Loisirs</a></li>
+            <li><a href="#">Annuaire des associations</a></li>
+          </ul>
+        </li>
+        <li ><a href="#">Cadre de Vie</a>
+          <ul>
+            <li><a href="./gestion.html">Gestions Déchets</a></li>
+            <li><a href="#">Espaces Verts</a></li>
+            <li><a href="#">Logements</a></li>
+            <li><a href="./transports.html">Transports</a></li>
+            <li><a href="#">Eau et Energie</a></li>
+            <li><a href="#">Economie et Commerces</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
     <div class="divSearch">
