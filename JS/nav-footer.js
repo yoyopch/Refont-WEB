@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  createNavBar();
+  //createNavBar();
   createFooter();
 
   /*$(window).on("resize", function () {
@@ -24,74 +24,8 @@ $(document).ready(function () {
   )*/
 
 
-  $('img[alt="logo-hamburger"]').on("click", function () {
-    if ($(".video").css("padding-top") == "0px") {
-      // quand on appuie sur le bouton pour afficher les sous-menu
-      $(".nav-links").css("display", "block");
-      $(".nav-links ul").css("display", "flex");
-      $(".divSearch").css("display", "flex");
-      $(".searchBox").css("display", "flex");
-      $(".video").css("padding-top", "150px");
-
-    } else {
-      // quand on rapuie sur le bouton pour enlever les sous-menu
-      $(".nav-links").css("display", "none");
-      $(".nav-links ul").css("display", "none");
-      $(".divSearch").css("display", "none");
-      $(".searchBox").css("display", "none");
-      $(".video").css("padding-top", "0px");
-    }
-  })
-
-
-
-
-
   function createNavBar() {
-    $("header").html(`<!-- Navbar du site -->
-    <nav class="navbar">
-    <a href="./index.html"><img src="./IMG/logo/logo.png" alt="MorlaixCommunauté"></a>
-    <div class="nav-links">
-      <ul >
-        <li ><a href="#">La Communauté</a>
-          <ul>
-            <li><a href="#">Présentation</a></li>
-            <li><a href="#">Histoire</a></li>
-            <li><a href="services.html">Services publics</a></li>
-            <li><a href="#">Territoire</a></li>
-          </ul>
-        </li>
-        <li ><a href="#">Sortir et Bouger</a>
-          <ul>
-            <li><a href="#">Les Espaces Sociaux Culturels</a></li>
-            <li><a href="#">Vie sportive</a></li>
-            <li><a href="#">Vacances</a></li>
-            <li><a href="#">Activités et Loisirs</a></li>
-            <li><a href="#">Annuaire des associations</a></li>
-          </ul>
-        </li>
-        <li ><a href="#">Cadre de Vie</a>
-          <ul>
-            <li><a href="./gestion.html">Gestions Déchets</a></li>
-            <li><a href="#">Espaces Verts</a></li>
-            <li><a href="#">Logements</a></li>
-            <li><a href="./transports.html">Transports</a></li>
-            <li><a href="#">Eau et Energie</a></li>
-            <li><a href="#">Economie et Commerces</a></li>
-          </ul>
-        </li>
-      </ul>
-      <div class="divSearch">
-        <div class="searchBox">
-          <input class="input_recherch" type="text" placeholder="Rechercher.." name="search">
-        </div>
-      </div>
-    </div>
-    
-
-    <img src="./IMG/logo/logo-hamburger.png" alt="logo-hamburger" class="menu-hamburger">
-
-  </nav>`)
+    $("header").html(``)
   }
   function createFooter() {
     $("footer").html(`<div class="info-top">
