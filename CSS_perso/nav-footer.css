@@ -135,11 +135,11 @@ input:not(input[id="search-input"]) {
         overflow: hidden; */
     }
 
-    
+
     nav ul li:hover,
-    nav ul ul li:hover{
+    nav ul ul li:hover {
         height: auto;
-    } 
+    }
 
 
     nav img {
@@ -204,7 +204,15 @@ input:not(input[id="search-input"]) {
     }
 
     input[id="search-input"] {
-        display: none;
+        display: block;
+
+    }
+
+    .search-bar {
+        margin: 0;
+        padding-bottom: 20px;
+        margin-right: 5px;
+        
     }
 
     /* responsive du footer */

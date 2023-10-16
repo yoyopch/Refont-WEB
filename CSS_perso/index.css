@@ -124,11 +124,80 @@ body {
 
 /* Style de l'agenda */
 
+
 .timeline {
     width: 49%;
     background-color: rgb(217, 217, 217);
     padding-bottom: 50px;
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
 }
+
+.container {
+    padding: 10px 15px;
+    position: relative;
+    width: 40%;
+}
+
+.container img {
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.text-box h2{
+    font-weight: 600;   
+}
+
+.left-container {
+    margin-left: 10%;
+}
+
+.right-container {
+    margin-right: 10%;
+}
+
+.right-container img {
+    left: -20px;
+}
+
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 1;
+    margin-top: 100px;
+    height: 80%;
+    animation: moveline 6s linear forwards;
+}
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 80%;
+    }
+}
+
+
+
+/* 
 
 .point-timeline {
     display: flex;
@@ -166,7 +235,7 @@ body {
 
 .contenu-agenda {
     margin-left: 15px;
-}
+} */
 
 
 /* Style de la carte de la commune */
@@ -182,9 +251,9 @@ body {
 @media screen and (max-width:511px) {
 
     /* responsive de l'agenda */
-    .point-timeline.complete::after {
+    /* .point-timeline.complete::after {
         height: 125px;
-    }
+    } */
 
 }
 
@@ -193,10 +262,10 @@ body {
 @media screen and (max-width:1266px) {
 
     /* responsive de l'agenda */
-    .point-timeline.complete::after {
+    /* .point-timeline.complete::after {
         height: 115px;
         top: 44px;
-    }
+    } 
 
     .status-timeline {
         height: 28px;
@@ -204,16 +273,17 @@ body {
         margin-left: 10px;
         z-index: 9990;
     }
-
+*/
     .post-actu {
         display: grid;
     }
 
+    /*
     .carte-commune {
         width: 100%;
         margin-left: 0;
         margin-top: 15px;
-    }
+    }*/
 
     .timeline {
         width: 100%;

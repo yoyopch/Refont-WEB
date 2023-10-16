@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  //createNavBar();
+  createNavBar();
   createFooter();
 
   /*$(window).on("resize", function () {
@@ -25,7 +25,62 @@ $(document).ready(function () {
 
 
   function createNavBar() {
-    $("header").html(``)
+    $("header").html(`    <!-- Navbar du site -->
+    <nav>
+      <a href="./index.html"><img src="./IMG/logo/logo.png" alt="MorlaixCommunauté"></a>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars" ></span>
+      </label>
+      <input type="checkbox" id="btn">
+
+      <div class="nav-links">
+        <ul>
+
+          <li>
+            <label for="btn-1" class="show">La Communauté</label>
+            <a href="./index.html">La Communauté</a>
+            <input type="checkbox"  id="btn-1">
+
+
+            <ul>
+              <li><a href="./index.html">Présentation</a></li>
+              <li><a href="./index.html">Histoire</a></li>
+              <li><a href="services.html">Services publics</a></li>
+              <li><a href="./index.html">Territoire</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="btn-2" class="show">Sortir et Bouger</label>
+            <a href="#">Sortir et Bouger</a>
+            <input type="checkbox" name="" id="btn-2">
+            <ul>
+              <li><a href="#">Les Espaces Sociaux Culturels</a></li>
+              <li><a href="#">Vie sportive</a></li>
+              <li><a href="#">Vacances</a></li>
+              <li><a href="#">Activités et Loisirs</a></li>
+              <li><a href="#">Annuaire des associations</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="btn-3" class="show">Cadre de vie</label>
+            <a href="#">Sortir et Bouger</a>
+            <input type="checkbox" name="" id="btn-3">
+            <ul>
+              <li><a href="./gestion.html">Gestions Déchets</a></li>
+              <li><a href="#">Espaces Verts</a></li>
+              <li><a href="#">Logements</a></li>
+              <li><a href="./transports.html">Transports</a></li>
+              <li><a href="#">Eau et Energie</a></li>
+              <li><a href="#">Economie et Commerces</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Rechercher...">
+      </div>
+    </nav>`)
   }
   function createFooter() {
     $("footer").html(`<div class="info-top">
