@@ -131,7 +131,6 @@ body {
     padding-bottom: 50px;
     position: relative;
     max-width: 1200px;
-    margin: 100px auto;
 }
 
 .container {
@@ -156,8 +155,9 @@ body {
     border-radius: 6px;
     font-size: 15px;
 }
-.text-box h2{
-    font-weight: 600;   
+
+.text-box h2 {
+    font-weight: 600;
 }
 
 .left-container {
@@ -186,11 +186,13 @@ body {
     height: 80%;
     animation: moveline 6s linear forwards;
 }
-@keyframes moveline{
-    0%{
+
+@keyframes moveline {
+    0% {
         height: 0;
     }
-    100%{
+
+    100% {
         height: 80%;
     }
 }
@@ -248,34 +250,23 @@ body {
 
 
 
-@media screen and (max-width:511px) {
-
-    /* responsive de l'agenda */
-    /* .point-timeline.complete::after {
-        height: 125px;
-    } */
-
-}
+@media screen and (max-width:511px) {}
 
 
 
 @media screen and (max-width:1266px) {
 
     /* responsive de l'agenda */
-    /* .point-timeline.complete::after {
-        height: 115px;
-        top: 44px;
-    } 
+    
+    /* responsive de l'agenda */
 
-    .status-timeline {
-        height: 28px;
-        width: 28px;
-        margin-left: 10px;
-        z-index: 9990;
-    }
-*/
     .post-actu {
-        display: grid;
+        display: block;
+    }
+
+    .timeline {
+        width: 100%;
+        margin-right: 0;
     }
 
     /*
@@ -285,9 +276,7 @@ body {
         margin-top: 15px;
     }*/
 
-    .timeline {
-        width: 100%;
-    }
+
 
 
 }

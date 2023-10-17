@@ -38,7 +38,7 @@ $(document).ready(function () {
 
           <li>
             <label for="btn-1" class="show">La Communauté</label>
-            <a href="./index.html">La Communauté</a>
+            <a href="">La Communauté</a>
             <input type="checkbox"  id="btn-1">
 
 
@@ -51,7 +51,7 @@ $(document).ready(function () {
           </li>
           <li>
             <label for="btn-2" class="show">Sortir et Bouger</label>
-            <a href="#">Sortir et Bouger</a>
+            <a href="">Sortir et Bouger</a>
             <input type="checkbox" name="" id="btn-2">
             <ul>
               <li><a href="#">Les Espaces Sociaux Culturels</a></li>
@@ -63,7 +63,7 @@ $(document).ready(function () {
           </li>
           <li>
             <label for="btn-3" class="show">Cadre de vie</label>
-            <a href="#">Sortir et Bouger</a>
+            <a href="">Sortir et Bouger</a>
             <input type="checkbox" name="" id="btn-3">
             <ul>
               <li><a href="./gestion.html">Gestions Déchets</a></li>
