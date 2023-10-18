@@ -76,7 +76,7 @@ $(document).ready(function () {
     $(".video span").on("click", function () {
         if ($(".video video").attr("muted") === "true") {
             $(".video span").html("volume_up");
-            $(".video video").attr("muted", "false");
+            $(".video video").removeAttr("muted");
         } else {
             $(".video span").html("no_sound");
             $(".video video").attr("muted", "true");

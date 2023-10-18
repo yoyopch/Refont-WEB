@@ -313,3 +313,6 @@ footer {
     display: flex;
     margin-bottom: 10px;
 }
+footer a:hover{
+    color: rgb(145, 138, 138);
+}
