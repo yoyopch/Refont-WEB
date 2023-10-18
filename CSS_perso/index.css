@@ -221,6 +221,11 @@ body {
     background-color: rgb(217, 217, 217);
 }
 
+#map{
+    display: flex;
+    justify-content: center;
+}
+
 #map path{
     fill : var(--c1);
 }
