@@ -1,10 +1,24 @@
 $(document).ready(function() {
 
-    $(".top-actu-left").append(`<img src="./IMG/top-actu-1.jpg" alt="image-ecolo">`);
-    $(".top-actu-left img").css("width", "100%").css("height", "100%").css("object-fit", "cover");
+    $(".top-actu-left").append(`
+    <div class="card" >
+        <img class="card-img-top" src="./IMG/top-actu-1.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">Partez à la découverte de la faune et la flore d'exception du territoire
+            </p>
+        </div>
+    </div>`);
+ 
 
-    $(".top-actu-right").append(`<img src="./IMG/top-actu-2.jpg" alt="image-ecolo">`);
-    $(".top-actu-right img").css("width", "100%").css("height", "100%").css("object-fit", "cover");
+    $(".top-actu-right").append(`
+    <div class="card" >
+        <img class="card-img-top" src="./IMG/top-actu-2.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">Cela porte sur l'état d'avancement du projet d'ouverture de la rivière de Morlaix…
+            </p>
+        </div>
+    </div>`);
+   
 
     $("#info1").append(`<img src="./IMG/bot-actu1.jpg" alt="image-ecolo">`)
     $("#info1 img").css("width", "100%").css("height", "100%").css("object-fit", "cover");
@@ -16,17 +30,7 @@ $(document).ready(function() {
     $("#info3 img").css("width", "100%").css("height", "100%").css("object-fit", "cover");
 
 
-    $(".top-actu-left").hover(
-      function() {
-      $(this).html("").css('background-color', 'rgb(86, 70, 70)').
-      $(this).css("width", "40%").css("height", "100%");
-  },
-  function() {
-      $(this).html("").append(`<img src="./IMG/top-actu-1.jpg" alt="image-ecolo">`)
-      $(".top-actu-left img").css("width", "100%").css("height", "100%").css("object-fit", "cover");
-  })
-
-   
+    
 
 
 

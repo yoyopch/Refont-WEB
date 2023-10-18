@@ -90,19 +90,27 @@ nav ul ul li a {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 300px;
+    width: 250px;
     margin: 20px;
     margin-left: auto;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    padding-right: 10px;
 }
 
 #search-input {
 
     flex: 1;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 25px;
     outline: none;
 }
+.search-bar span{
+    position: relative;
+}
+
 
 
 .show,
@@ -211,7 +219,7 @@ input:not(input[id="search-input"]) {
     .search-bar {
         margin: 0;
         display: none;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
         margin-right: 5px;
         
     }

@@ -99,12 +99,14 @@ body {
 }
 
 .top-actu-right {
-    background-image: url("../IMG/top-actu-2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
     width: 40%;
     height: 100%;
     position: relative;
+}
+.card-body{
+    text-align: center;
+    background-color: rgb(90, 70, 70);
+    padding-top: 5px;
 }
 
 .actu-bot {
