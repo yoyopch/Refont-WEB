@@ -49,6 +49,7 @@ $(document).ready(function () {
     </div>`);
 
     $("#more-actus").text("+ d'actus");
+    $("#more-actus").css("cursor", "pointer");
     var moreActu = 0;
     $("#more-actus").on("click", function () {
         if (moreActu==0){
