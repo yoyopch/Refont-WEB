@@ -100,7 +100,8 @@ body {
     width: 40%;
     height: 100%;
 }
-.card-body{
+
+.card-body {
     text-align: center;
     background-color: rgb(90, 70, 70);
     padding-top: 8%;
@@ -262,6 +263,20 @@ body {
 
 
 @media screen and (max-width:1266px) {
+
+
+    /* Responsive des actus */
+    .top-actus{
+        display: block;
+    }
+    .top-actu-left, .top-actu-right{
+        width: 70%;
+        height: auto;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 20px;
+    }
+
 
     /* responsive de l'agenda */
     .post-actu {
