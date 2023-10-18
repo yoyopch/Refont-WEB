@@ -52,16 +52,16 @@ $(document).ready(function () {
     $("#more-actus").css("cursor", "pointer");
     var moreActu = 0;
     $("#more-actus").on("click", function () {
-        if (moreActu==0){
+        if (moreActu == 0) {
             $(".actu-bot").css("display", "none");
             $("#more-actus").text("+ d'actus");
-            moreActu=1;
-        }else{
+            moreActu = 1;
+        } else {
             $(".actu-bot").css("display", "flex");
             $("#more-actus").text("- d'actus");
-            moreActu=0;
+            moreActu = 0;
         }
-        
+
     })
     $(".contenu-agenda span").hover( //fonctionnement alterné du survol (mouseout,moseover) → 2 fonctions
         function () {
@@ -73,6 +73,16 @@ $(document).ready(function () {
         }
     );
 
+    $(".video span").on("click", function () {
+        var video = $(".video video");
+        if (video.attr("muted") === "true") {
+            $(".video span").html("").append("no_sound");
+            video.attr("muted", "false");
+        } else {
+            $(".video span").html("").append("volume_up");
+            video.attr("muted", "true");
+        }
+    });
 
 
 })

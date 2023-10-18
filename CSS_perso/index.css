@@ -48,6 +48,16 @@ body {
     position: relative;
 }
 
+.video span {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    margin: 15px;
+    font-size: 40px;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+    user-select: none;
+}
 
 
 /* Style des titres section */
@@ -266,10 +276,12 @@ body {
 
 
     /* Responsive des actus */
-    .top-actus{
+    .top-actus {
         display: block;
     }
-    .top-actu-left, .top-actu-right{
+
+    .top-actu-left,
+    .top-actu-right {
         width: 70%;
         height: auto;
         margin-left: 15%;
