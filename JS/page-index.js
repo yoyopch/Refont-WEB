@@ -74,12 +74,11 @@ $(document).ready(function () {
     );
 
     $(".video span").on("click", function () {
-        var video = $(".video video");
         if ($(".video video").attr("muted") === "true") {
-            $(".video span").html("").append("volume_up");
+            $(".video span").html("volume_up");
             $(".video video").attr("muted", "false");
         } else {
-            $(".video span").html("").append("no_sound");
+            $(".video span").html("no_sound");
             $(".video video").attr("muted", "true");
         }
     });
