@@ -75,12 +75,12 @@ $(document).ready(function () {
 
     $(".video span").on("click", function () {
         var video = $(".video video");
-        if (video.attr("muted") === "true") {
-            $(".video span").html("").append("no_sound");
-            video.attr("muted", "false");
-        } else {
+        if ($(".video video").attr("muted") === "true") {
             $(".video span").html("").append("volume_up");
-            video.attr("muted", "true");
+            $(".video video").attr("muted", "false");
+        } else {
+            $(".video span").html("").append("no_sound");
+            $(".video video").attr("muted", "true");
         }
     });
 
