@@ -221,6 +221,14 @@ body {
     background-color: rgb(217, 217, 217);
 }
 
+#map path{
+    fill : var(--c1);
+}
+#map path:hover{
+    fill : var(--c2);
+    transition: 0.5s;
+}
+
 
 
 @media screen and (max-width:511px) {
