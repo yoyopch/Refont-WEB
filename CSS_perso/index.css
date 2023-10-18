@@ -79,14 +79,12 @@ body {
 
 .top-actus {
     display: flex;
-    height: 35%;
     justify-content: space-evenly;
 }
 
 .top-actu-left {
     width: 40%;
     height: 100%;
-    position: relative;
 }
 
 .texte-actu {
@@ -101,17 +99,18 @@ body {
 .top-actu-right {
     width: 40%;
     height: 100%;
-    position: relative;
 }
 .card-body{
     text-align: center;
     background-color: rgb(90, 70, 70);
-    padding-top: 5px;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    height: 30%;
+    color: white;
 }
 
 .actu-bot {
-    display: flex;
-    height: 35%;
+    display: none;
     justify-content: space-evenly;
 }
 
