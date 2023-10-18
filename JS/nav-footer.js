@@ -23,6 +23,14 @@ $(document).ready(function () {
   }
   )*/
 
+$(".icon").on("click",function(){
+  if($("nav").css("height")==("86px")){
+    $(".search-bar").css("display","flex");
+  }
+  else{
+    $(".search-bar").css("display","none");
+  }
+})
 
   function createNavBar() {
     $("header").html(`    <!-- Navbar du site -->
