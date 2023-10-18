@@ -190,7 +190,7 @@ input:not(input[id="search-input"]) {
         line-height: 70px;
         right: 20px;
         top: 15px;
-        font-size: 50px;
+        font-size: 35px;
         cursor: pointer;
     }
 
