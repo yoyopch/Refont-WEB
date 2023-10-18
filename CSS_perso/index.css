@@ -216,6 +216,8 @@ body {
         display: block;
     }
 
+
+    /* style de l'agenda */
     .timeline {
         width: 100%;
         margin-right: 0;
@@ -243,6 +245,17 @@ body {
         margin-left: 10%;
         width: 90%;
     }
+
+
+    /* style de la carte des communes */
+    .carte-commune {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+
+
 }
 
 
@@ -259,32 +272,13 @@ body {
         margin-right: 0;
     }
 
-    /* 
-    
-    .post-actu {
-        display: block;
-    }
 
-    .timeline {
+    /* style de la carte des communes */
+    .carte-commune {
         width: 100%;
-        margin-right: 0;
+        margin-left: 0;
+        margin-top: 15px;
     }
-
-    .container .left-container {
-        width: 100%;
-    }
-
-    .right-container {
-        margin-right: 50%;
-    }
-
-    .left-container img {
-        left: -20px;
-    }
-
-    .timeline::after {
-        left: 10%;
-    } */
 
 
 }
