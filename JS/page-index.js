@@ -74,14 +74,14 @@ $(document).ready(function () {
     );
 
     $(".video span").on("click", function () {
-        if ($(".video video").attr("muted") === "true") {
+        if ($(".video video").prop("muted") == true) {
             $(".video span").html("volume_up");
-            $(".video video").removeAttr("muted");
+            $(".video video").prop("muted",false);
         } else {
             $(".video span").html("no_sound");
-            $(".video video").attr("muted", "true");
+            $(".video video").prop("muted", true);
         }
     });
 
-
+    
 })
