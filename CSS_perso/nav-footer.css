@@ -43,6 +43,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    cursor: pointer;
     line-height: 70px;
     font-size: 18px;
     padding-left: 15px;
@@ -50,8 +51,8 @@ nav ul li a {
     margin-right: 50px;
 }
 
-nav ul li a:hover {
-    color: #5f8ea0;
+nav ul li:hover, nav ul ul li a:hover {
+    color: #3f5f6b;
 }
 
 nav ul ul {
@@ -84,6 +85,7 @@ nav ul ul li {
 nav ul ul li a {
     line-height: 50px;
 }
+
 
 /* Styles pour la barre de recherche */
 .search-bar {
