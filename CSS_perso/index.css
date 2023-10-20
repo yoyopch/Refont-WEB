@@ -238,6 +238,7 @@ body {
 }
 .nom-communes{
     height: 10px;
+    text-align: center;
 }
 
 
@@ -309,7 +310,7 @@ body {
     }
 
     .actu-bot{
-        display: flex;
+        display: none;
         flex-direction: column;
     }
     .actu-bot-info{
