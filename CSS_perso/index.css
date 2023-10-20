@@ -73,8 +73,7 @@ body {
 /* Style du bloc d'actu */
 
 .actu {
-    background-color: rgb(217, 217, 217);
-    margin-top: 2%;
+    background-color: rgb(243, 243, 243);
     display: block;
     margin-bottom: 15px;
 }
@@ -129,7 +128,7 @@ body {
     margin-top: 5%;
     width: 25%;
     height: 70%;
-    background-color: rgb(80, 74, 74);
+    background-color: rgb(243, 243, 243);
 }
 
 
@@ -218,7 +217,6 @@ body {
 .carte-commune {
     width: 49%;
     margin-left: 2%;
-    background-color: rgb(217, 217, 217);
 }
 #map svg{
     width: 100%;
