@@ -76,12 +76,21 @@ $(document).ready(function () {
     $(".video span").on("click", function () {
         if ($(".video video").prop("muted") == true) {
             $(".video span").html("volume_up");
-            $(".video video").prop("muted",false);
+            $(".video video").prop("muted", false);
         } else {
             $(".video span").html("no_sound");
             $(".video video").prop("muted", true);
         }
     });
 
-    
+    const paths = $("svg path");
+    txtCommune = $(".nom-communes");
+    paths.on("mouseover", function () {
+        txtCommune.text($(this).attr("title"));
+    });
+    paths.on("mouseout", function () {
+        txtCommune.text("")
+    });
+
+
 })

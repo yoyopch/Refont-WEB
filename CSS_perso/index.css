@@ -236,6 +236,9 @@ body {
     fill : var(--c2);
     transition: 0.5s;
 }
+.nom-communes{
+    height: 10px;
+}
 
 
 
