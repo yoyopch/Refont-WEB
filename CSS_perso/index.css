@@ -109,9 +109,17 @@ body {
     width: 40%;
     height: 100%;
 }
-.card{
+
+.card {
     border: none;
 }
+.card img{
+    transition: 1s;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+
 .card-body {
     text-align: center;
     background-color: rgb(243, 243, 243);
@@ -149,6 +157,12 @@ body {
     padding: 10px 15px;
     position: relative;
     width: 40%;
+    transition: 1s;
+}
+
+.container:hover {
+    padding: 15px;
+    cursor: pointer;
 }
 
 .container img {
@@ -213,30 +227,35 @@ body {
 
 
 
+
 /* Style de la carte de la commune */
 
 .carte-commune {
     width: 49%;
     margin-left: 2%;
 }
-#map svg{
+
+#map svg {
     width: 100%;
     padding-left: 20%;
 
 }
-#map{
+
+#map {
     display: flex;
     justify-content: center;
 }
 
-#map path{
-    fill : var(--c1);
+#map path {
+    fill: var(--c1);
 }
-#map path:hover{
-    fill : var(--c2);
+
+#map path:hover {
+    fill: var(--c2);
     transition: 0.5s;
 }
-.nom-communes{
+
+.nom-communes {
     height: 10px;
     text-align: center;
 }
@@ -309,11 +328,12 @@ body {
         margin-bottom: 20px;
     }
 
-    .actu-bot{
+    .actu-bot {
         display: none;
         flex-direction: column;
     }
-    .actu-bot-info{
+
+    .actu-bot-info {
         height: auto;
         width: 50%;
         margin-left: auto;

@@ -87,7 +87,7 @@ $(".icon").on("click",function(){
       </div>
       <div class="search-bar">
         <input type="text" id="search-input" placeholder="Rechercher..." size="4">
-        <span class="fa fa-search"></span>
+        <a href=""><span class="fa fa-search"></span></a>
         </div>
     </nav>`)
   }
