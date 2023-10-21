@@ -37,7 +37,7 @@ nav ul li {
     line-height: 70px;
     font-size: 18px;
     padding-right: 15px;
-    
+
 }
 
 nav ul li a {
@@ -49,7 +49,7 @@ nav ul li a {
     padding-left: 15px;
     padding-right: 15px;
     margin-right: 50px;
-    
+
 }
 
 nav ul li:hover,
@@ -152,6 +152,11 @@ input:not(input[id="search-input"]) {
     nav ul li:hover,
     nav ul ul li:hover {
         height: auto;
+
+
+        transition-property: height;
+        transition-duration: 2s;
+        transition-timing-function:linear;
     }
 
 

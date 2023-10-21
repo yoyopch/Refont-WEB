@@ -48,21 +48,25 @@ $(document).ready(function () {
         </div>
     </div>`);
 
-    $("#more-actus").text("+ d'actus");
+
+    // Deploiement des actus
+    $("#more-actus").text("+ d'actualités");
     $("#more-actus").css("cursor", "pointer");
-    var moreActu = 0;
+    var moreActu = 1;
     $("#more-actus").on("click", function () {
         if (moreActu == 0) {
-            $(".actu-bot").css("display", "none");
-            $("#more-actus").text("+ d'actus");
+            $(".actu-bot")[0].classList.remove("extend");
+            $("#more-actus").text("+ d'actualités");
             moreActu = 1;
         } else {
-            $(".actu-bot").css("display", "flex");
-            $("#more-actus").text("- d'actus");
+            $(".actu-bot")[0].classList.add("extend");
+            $("#more-actus").text("- d'actualités");
             moreActu = 0;
         }
 
     })
+
+    //hover de l'agenda
     $(".contenu-agenda span").hover( //fonctionnement alterné du survol (mouseout,moseover) → 2 fonctions
         function () {
             $(this).css({ 'font-weight': 'bolder' });
@@ -73,6 +77,8 @@ $(document).ready(function () {
         }
     );
 
+
+    //Son de la vidéo
     $(".video span").on("click", function () {
         if ($(".video video").prop("muted") == true) {
             $(".video span").html("volume_up");
@@ -83,6 +89,7 @@ $(document).ready(function () {
         }
     });
 
+    //Nom des communes au hover
     const paths = $("svg path");
     txtCommune = $(".nom-communes");
     paths.on("mouseover", function () {
@@ -93,4 +100,19 @@ $(document).ready(function () {
     });
 
 
+    $(window).on("scroll", reveal);
+    function reveal() {
+        var reveals = $(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var revealTop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if (revealTop < windowHeight - revealpoint) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
 })
