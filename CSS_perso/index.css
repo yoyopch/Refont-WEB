@@ -6,6 +6,7 @@
     --c3: #E9C46A;
     --c4: #F4A261;
     --c5: #E76F51;
+    --c6: #F3F3F3;
 }
 
 
@@ -84,7 +85,7 @@ body {
 /* Style du bloc d'actu */
 
 .actu {
-    background-color: rgb(243, 243, 243);
+    background-color: var(--c6);
     display: block;
 }
 
@@ -157,7 +158,7 @@ body {
 
 .card-body {
     text-align: center;
-    background-color: rgb(243, 243, 243);
+    background-color: var(--c6);
     padding-top: 8%;
     padding-bottom: 8%;
     height: 30%;
@@ -172,7 +173,7 @@ body {
     margin-top: 5%;
     width: 25%;
     height: 70%;
-    background-color: rgb(243, 243, 243);
+    background-color: var(--c6);
 }
 
 .actu-bot.extend {
@@ -184,7 +185,7 @@ body {
 .trapez {
     width: 20%;
     position: absolute;
-    border-top: 50px solid rgb(243, 243, 243);
+    border-top: 50px solid var(--c6);
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     margin-left: 40%;
@@ -232,7 +233,7 @@ body {
 
 .text-box {
     padding: 20px 30px;
-    background-color: rgb(217, 217, 217);
+    background-color: var(--c6);
     position: relative;
     border-radius: 6px;
     font-size: 15px;
@@ -259,7 +260,7 @@ body {
     content: '';
     position: absolute;
     width: 6px;
-    background: rgb(217, 217, 217);
+    background: var(--c6);
     top: 0;
     left: 50%;
     margin-left: -3px;
