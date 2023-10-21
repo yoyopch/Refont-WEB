@@ -75,7 +75,6 @@ body {
 .actu {
     background-color: rgb(243, 243, 243);
     display: block;
-    margin-bottom: 15px;
 }
 
 
@@ -113,10 +112,12 @@ body {
 .card {
     border: none;
 }
-.card img{
+
+.card img {
     transition: 1s;
 }
-.card img:hover{
+
+.card img:hover {
     transform: scale(1.1);
 }
 
@@ -141,6 +142,22 @@ body {
     background-color: rgb(243, 243, 243);
 }
 
+.trapez {
+    width: 20%;
+    position: absolute;
+    border-top: 50px solid rgb(243, 243, 243);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    margin-left: 40%;
+    margin-right: 40%;
+
+}
+
+.trapez p {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: -50px;
+}
 
 
 /* Style de l'agenda */
@@ -262,11 +279,21 @@ body {
 
 
 
-@media screen and (max-width:511px) {
+@media (min-width:300px) and (max-width:511px) {
     .post-actu {
         display: block;
     }
 
+    .trapez {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        z-index: 999;
+    }
+
+    .trapez p {
+        font-size: larger;
+    }
 
     /* style de l'agenda */
     .timeline {
@@ -317,6 +344,7 @@ body {
     /* Responsive des actus */
     .top-actus {
         display: block;
+        padding-bottom: 5px;
     }
 
     .top-actu-left,
@@ -340,6 +368,13 @@ body {
         margin-right: auto;
     }
 
+    .trapez {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        z-index: 999;
+    }
+
     /* responsive de l'agenda */
     .post-actu {
         display: block;
@@ -348,6 +383,7 @@ body {
     .timeline {
         width: 100%;
         margin-right: 0;
+        margin-top: 3%;
     }
 
 
