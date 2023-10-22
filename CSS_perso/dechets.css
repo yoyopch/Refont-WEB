@@ -124,11 +124,13 @@ h2{
     gap: 10 px;
     background-color: #f3f3f3;
     margin: 0px;
+    margin-top: 30px;
     padding : 10px;
 
 }
 
 .rubrique > div {
+    margin-top: 25px;
     text-align: center;
     font-size: 40;
     color : black

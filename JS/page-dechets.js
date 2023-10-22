@@ -4,6 +4,7 @@ function init(){
     AllTexte();
 }
 
+// ajout de texte à la page
 function AllTexte(){
     $(".fond").html(" <img id = 'img_bg' src='IMG/dechets/fond2.jpg' alt='Déchets'> ")
     $("#chemin").html(" <p><a href='index.html'>Accueil</a> > <a href='gestion.html'>Organisation de nos déchets</a></p> ");
