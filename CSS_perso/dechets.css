@@ -1,19 +1,10 @@
 /* image de fond */
-.fond #img_bg{
+#img_bg{
     width : 100%;
 }
 
 /* mise en forme du contenu texte */
-div .content_txt .infos, div .content_txt .section{
-    margin-right: 100px;
-    margin-left: 100px;
-}
 
-/* fond de couleur pour les sections de la page */
-.content_txt .section{
-    background-color: #f3f3f3;
-    display: inline;
-}
 
 /* gestion de lien */ 
 div #chemin p a:link, div #chemin p a:visited{
@@ -23,7 +14,7 @@ div #chemin p a:link, div #chemin p a:visited{
     text-decoration: none;
 }
 
-div .infos #chemin p a:hover, div .section #carte p a:hover{
+div .infos #chemin p a:hover, div .rubrique #carte p a:hover{
     color : #264653;
     font-size: 45;
     font-weight: 800;
@@ -42,23 +33,109 @@ h2{
     font-weight: 700
 }
 
-/* mise en forme du contenu */
-.section{
-    display : grid;
-    padding-right: 10%;
-    grid-template-columns: 100% ;
+/* texte sur image*/
+.cat-1 {
+    display: inline-block;
+    position: relative;
+}
+.cat-1 #text {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position : absolute;
+    text-align: center;
+    color: white;
+    width: 275px;
+    top : 0px;
+    left : 12px;
 }
 
-/* mise en forme du texte dans section */
-div .section p{
-    text-align: justify;
+.cat-2 {
+    display: inline-block;
+    position: relative;
+}
+.cat-2 #text2 {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position : absolute;
+    text-align: center;
+    color: white;
+    width: 275px;
+    top : 0px;
+    left : 12px;
+}
+
+.cat-3 {
+    display: inline-block;
+    position: relative;
+}
+.cat-3 #text3 {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position : absolute;
+    text-align: center;
+    color: white;
+    width: 275px;
+    top : 0px;
+    left : 12px;
+}
+
+.cat-4 {
+    display: inline-block;
+    position: relative;
+}
+.cat-4 #text4 {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position : absolute;
+    text-align: center;
+    color: white;
+    width: 275px;
+    top : 0px;
+    left : 12px;
+}
+
+.cat-5 {
+    display: inline-block;
+    position: relative;
+}
+.cat-5 #text5 {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position : absolute;
+    text-align: center;
+    color: white;
+    width: 275px;
+    top : 0px;
+    left : 12px;
+}
+
+/* mise en forme des rubriques */
+.rubrique{
+    display : grid;
+    justify-content: space-evenly;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 250px 250px;
+    gap: 10 px;
+    background-color: white;
+    padding: 0px;
+
+}
+
+.rubrique > div {
+    text-align: center;
     font-size: 40;
     color : black
 }
 
+/* placement des éléments dans grid*/
+.carte{
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
 
 /* image dans div section */
-div .section img{
+.rubrique img{
     height : 200px;
     width : 275px;
 }
