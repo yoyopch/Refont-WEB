@@ -43,4 +43,5 @@ function AllTexte(){
         <div id = "text5">Point d'apport volontaire <em>(PAV)</em></div>
         <img src="IMG/dechets/cat-5.jpg" alt="PAV">
     `);
+// focus sur les images des rubriques
 }
