@@ -65,7 +65,7 @@ h2{
 }
 
 .cat-3 {
-    display: inline-block;
+    display: block;
     position: relative;
 }
 .cat-3 #text3 {
@@ -113,11 +113,12 @@ h2{
 .rubrique{
     display : grid;
     justify-content: space-evenly;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 450px 300px 300px;
     grid-template-rows: 250px 250px 250px;
     gap: 10 px;
-    background-color: white;
-    padding: 0px;
+    background-color: #f3f3f3;
+    margin: 0px;
+    padding : 10px;
 
 }
 
