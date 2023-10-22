@@ -3,8 +3,6 @@
     width : 100%;
 }
 
-/* mise en forme du contenu texte */
-
 
 /* gestion de lien */ 
 div #chemin p a:link, div #chemin p a:visited{
@@ -26,12 +24,14 @@ div #carte p a:link, div #carte p a:visited{
     font-weight: 0;
 }
 
+
 /* titre de la page */ 
 h2{
     color: black;
     font-size : 60;
     font-weight: 700
 }
+
 
 /* texte sur image*/
 .cat-1 {
@@ -109,6 +109,7 @@ h2{
     left : 12px;
 }
 
+
 /* mise en forme des rubriques */
 .rubrique{
     display : grid;
@@ -127,6 +128,7 @@ h2{
     font-size: 40;
     color : black
 }
+
 
 /* placement des éléments dans grid*/
 .carte{
@@ -160,7 +162,7 @@ h2{
 }
 
 
-/* image dans div section */
+/* image des rubriques */
 .rubrique img{
     height : 200px;
     width : 275px;
