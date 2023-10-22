@@ -31,7 +31,7 @@ nav ul {
 nav ul li {
     float: left;
     display: block;
-    background-color: var(--c1);
+    background-color: #264653;
     margin: 0 5px;
     color: white;
     line-height: 70px;
@@ -54,7 +54,7 @@ nav ul li a {
 
 nav ul li:hover,
 nav ul ul li a:hover {
-    color: var(--c2);
+    color: #2A9D8F;
 }
 
 nav ul ul {
@@ -198,7 +198,7 @@ input:not(input[id="search-input"]) {
     }
 
     .show:hover {
-        color: var(--c2);
+        color: #2A9D8F;
     }
 
     .icon {
@@ -260,7 +260,7 @@ input:not(input[id="search-input"]) {
 /* Style du footer */
 
 footer {
-    background-color: var(--c0);
+    background-color: #404040;
     margin: 0;
     color: white;
     width: 100%;
@@ -285,7 +285,7 @@ footer {
     border-radius: 20px;
     border: none;
     color: white;
-    background-color: var(--c5);
+    background-color: #E76F51;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
