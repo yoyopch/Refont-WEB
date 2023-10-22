@@ -134,6 +134,31 @@ h2{
     grid-row: 1 / 4;
 }
 
+.cat-1{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.cat-2{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.cat-3{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.cat-4{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.cat-5{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
 
 /* image dans div section */
 .rubrique img{
