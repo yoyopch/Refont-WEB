@@ -1,41 +1,66 @@
-.fond {
-    background-image: url(IMG/dechets/fond.jpg);
+/* image de fond */
+.fond #img_bg{
+    width : 100%;
 }
 
-.infos, .content{
+/* mise en forme du contenu texte */
+div .content_txt .infos, div .content_txt .section{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+/* fond de couleur pour les sections de la page */
+.content_txt .section{
     background-color: #f3f3f3;
-    margin: 10px, 0px;
+    display: inline;
 }
 
-.infos #chemin p a:link, a:visited{
+/* gestion de lien */ 
+div #chemin p a:link, div #chemin p a:visited{
     color : black;
     font-size: 40;
     font-weight: 700;
     text-decoration: none;
 }
 
-.infos #chemin p a:hover{
+div .infos #chemin p a:hover, div .section #carte p a:hover{
     color : #264653;
-    font-size: 40;
-    font-weight: 700;
+    font-size: 45;
+    font-weight: 800;
+}
+div #carte p a:link, div #carte p a:visited{
+    text-decoration: none;
+    color : black;
+    font-size : 40;
+    font-weight: 0;
 }
 
+/* titre de la page */ 
 h2{
     color: black;
     font-size : 60;
     font-weight: 700
 }
 
-.list{
-    list-style-type: none;
-    color : black;
-    font-size : 40;
+/* mise en forme du contenu */
+.section{
+    display : grid;
+    padding-right: 10%;
+    grid-template-columns: 100% ;
 }
 
-.list img{
-    width: 350 px;
-    height: 300 px;
+/* mise en forme du texte dans section */
+div .section p{
+    text-align: justify;
+    font-size: 40;
+    color : black
 }
 
+
+/* image dans div section */
+div .section img{
+    height : 200px;
+    width : 275px;
+}
 
 
