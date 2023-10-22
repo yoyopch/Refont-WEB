@@ -1,0 +1,42 @@
+.fond {
+    background-image: url(IMG/dechets/fond.jpg);
+}
+
+.infos, .content{
+    background-color: #f3f3f3;
+    margin: 10px, 0px;
+}
+
+.infos #chemin p a:link, a:visited{
+    color : black;
+    font-size: 40;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.infos #chemin p a:hover{
+    color : #264653;
+    font-size: 40;
+    font-weight: 700;
+}
+
+h2{
+    color: black;
+    font-size : 60;
+    font-weight: 700
+}
+
+.list{
+    list-style-type: none;
+    color : black;
+    font-size : 40;
+}
+
+.list img{
+    width: 450 px;
+    height: 300 px;
+
+}
+
+
+
