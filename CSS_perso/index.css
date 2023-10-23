@@ -46,6 +46,8 @@
 body {
     margin: 0;
     padding: 0;
+    max-width: 100vw;
+    height: 100vh;
     position: relative;
 }
 
@@ -107,7 +109,7 @@ body {
     height: 100%;
 }
 
-.top-actu-left.reveal{
+.top-actu-left.reveal {
     transform: translateX(-150px);
     opacity: 0;
     transition: all 2s ease;
@@ -167,6 +169,16 @@ body {
 
 .actu-bot {
     display: none;
+    opacity: 0;
+}
+
+.actu-bot.extend {
+    justify-content: space-evenly;
+    opacity: 1;
+
+    transition-property: opacity;
+    transition-duration: 1.25s;
+    transition-timing-function: linear;
 }
 
 .actu-bot-info {
@@ -176,10 +188,7 @@ body {
     background-color: var(--c6);
 }
 
-.actu-bot.extend {
-    display: flex;
-    justify-content: space-evenly;
-}
+
 
 
 .trapez {
@@ -191,6 +200,7 @@ body {
     margin-left: 40%;
     margin-right: 40%;
     z-index: 999;
+    font-weight: bold;
 }
 
 .trapez p {
@@ -341,7 +351,8 @@ footer.reveal.active {
 
 
 
-@media (min-width:300px) and (max-width:511px) {
+@media screen and (max-width:768px) {
+
     .post-actu {
         display: block;
     }
@@ -351,6 +362,7 @@ footer.reveal.active {
         margin-left: 5%;
         margin-right: 5%;
         z-index: 999;
+        font-weight: bold;
     }
 
     .trapez p {
@@ -396,13 +408,11 @@ footer.reveal.active {
 
 
     .reveal {
-        transform: translateX(150px);
         opacity: 0;
         transition: all 2s ease;
     }
 
     .reveal.active {
-        transform: translateX(0px);
         opacity: 1;
     }
 
@@ -446,6 +456,7 @@ footer.reveal.active {
         margin-left: 25%;
         margin-right: 25%;
         z-index: 999;
+        font-weight: bold;
     }
 
     /* responsive de l'agenda */

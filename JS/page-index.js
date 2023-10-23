@@ -55,15 +55,18 @@ $(document).ready(function () {
     var moreActu = 1;
     $("#more-actus").on("click", function () {
         if (moreActu == 0) {
+            $(".actu-bot").css("display", "none");
             $(".actu-bot")[0].classList.remove("extend");
             $("#more-actus").text("+ d'actualités");
             moreActu = 1;
         } else {
-            $(".actu-bot")[0].classList.add("extend");
+            $(".actu-bot").css("display", "flex");
+            setTimeout(() => {
+                $(".actu-bot")[0].classList.add("extend");               
+            }, 10);         
             $("#more-actus").text("- d'actualités");
             moreActu = 0;
         }
-
     })
 
     //hover de l'agenda
@@ -102,16 +105,16 @@ $(document).ready(function () {
 
     $(window).on("scroll", reveal);
     function reveal() {
+        var windowHeight = window.innerHeight;
         var reveals = $(".reveal");
         for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
+            
             var revealTop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
 
-            if (revealTop < windowHeight - revealpoint) {
+            reveals[i].classList.remove("active");
+
+            if (revealTop < windowHeight) {
                 reveals[i].classList.add("active");
-            } else {
-                reveals[i].classList.remove("active");
             }
         }
     }
