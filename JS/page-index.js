@@ -52,8 +52,8 @@ $(document).ready(function () {
     // Deploiement des actus
     $("#more-actus").text("+ d'actualités");
     $("#more-actus").css("cursor", "pointer");
-    var moreActu = 1;
     $("#more-actus").on("click", function () {
+        /*
         if (moreActu == 0) {
             $(".actu-bot").css("display", "none");
             $(".actu-bot")[0].classList.remove("extend");
@@ -62,12 +62,20 @@ $(document).ready(function () {
         } else {
             $(".actu-bot").css("display", "flex");
             setTimeout(() => {
-                $(".actu-bot")[0].classList.add("extend");               
-            }, 10);         
+                $(".actu-bot")[0].classList.add("extend");
+            }, 10);
             $("#more-actus").text("- d'actualités");
             moreActu = 0;
         }
+        */
+        $(".actu-bot").slideToggle();
+        $(".actu-bot").css("display","flex").css("justify-content","space-evenly");
+        $("#more-actus").text(function(i, text){
+            return text === "+ d'actualités" ? "- d'actualités" : "+ d'actualités";
+          });
     })
+
+
 
     //hover de l'agenda
     $(".contenu-agenda span").hover( //fonctionnement alterné du survol (mouseout,moseover) → 2 fonctions
@@ -79,6 +87,7 @@ $(document).ready(function () {
             $(this).css(cssObj);
         }
     );
+
 
 
     //Son de la vidéo
@@ -108,7 +117,7 @@ $(document).ready(function () {
         var windowHeight = window.innerHeight;
         var reveals = $(".reveal");
         for (var i = 0; i < reveals.length; i++) {
-            
+
             var revealTop = reveals[i].getBoundingClientRect().top;
 
             reveals[i].classList.remove("active");

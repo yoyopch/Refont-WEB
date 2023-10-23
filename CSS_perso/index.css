@@ -169,16 +169,10 @@ body {
 
 .actu-bot {
     display: none;
-    opacity: 0;
 }
 
 .actu-bot.extend {
     justify-content: space-evenly;
-    opacity: 1;
-
-    transition-property: opacity;
-    transition-duration: 1.25s;
-    transition-timing-function: linear;
 }
 
 .actu-bot-info {
@@ -421,7 +415,7 @@ footer.reveal.active {
 
 
 
-@media screen and (max-width:1266px) {
+@media screen and (max-width:1285px) {
 
 
     /* Responsive des actus */
@@ -457,6 +451,9 @@ footer.reveal.active {
         margin-right: 25%;
         z-index: 999;
         font-weight: bold;
+    }
+    .trapez p{
+        font-size: small;
     }
 
     /* responsive de l'agenda */

@@ -1,0 +1,528 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueuil Morlaix Communauté</title>
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="./JS/nav-footer.js"></script>
+  <script src="./JS/page-transport.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./CSS_perso/nav-footer.css">
+  <link rel="stylesheet" href="./CSS_perso/transport.css">
+
+</head>
+
+<body>
+  <header>
+    <!-- Navbar du site -->
+
+  </header>
+
+  <section id="deplacer">
+<div class="sous-titre">
+  <div class="title-section">
+    <span class="material-symbols-outlined ">
+        directions_bike
+    </span>
+    <h3>Se déplacer</h3>
+  </div>
+  <div class="nouveautes">
+  <h2>De nouveaux moyens de transports</h2>
+</div>
+</div>
+</section>
+
+
+    <!-- Grand bloc de tous les transports -->
+    <div class="contenu-transport">
+
+      <!-- Premier bloc de ligne de transport en haut -->
+      <div class="top-content">
+
+        <!-- Premier bloc d'image -->
+        <div class="top-img-one reveal">
+
+        </div>
+
+        <!-- Deuxieme bloc d'image -->
+        <div class="top-img-two reveal">
+
+        </div>
+      </div>
+
+
+
+      <!-- Deuxième bloc de ligne de type de transport en haut -->
+      <div class="second-transport reveal">
+        <div class="second-transport-info" id="info1" >
+
+        </div>
+        <div class="second-transport-info " id="info2" >
+
+        </div>
+        <div class="second-transport-info " id="info3" >
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="trapez">
+    <p id="more-transport"></p>
+  </div>
+
+
+  <div class="actimodule" style="display: flex;align-items: center;justify-content: center; flex-direction: column; margin-top: 150px;">
+    <h2>PLAN GLOBAL URBAIN ET PERIURBAIN LINÉOTIM</h2>
+    <link rel="stylesheet" nonce="ugepNjzVondyDVz6XClr6w==" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+<style nonce="ugepNjzVondyDVz6XClr6w==" type="text/css">
+#pdftoMap {
+width: 550px;
+height: 500px;
+margin-top: 50px;
+}
+
+.leaflet-container{background: #f5f5f5 !important;}
+.leaflet-control-download { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1MTk3NUFCMjU2MDMxMUU0QTQwMkJDNEQ1NEYxNjA3NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1MTk3NUFCMzU2MDMxMUU0QTQwMkJDNEQ1NEYxNjA3NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjUxOTc1QUIwNTYwMzExRTRBNDAyQkM0RDU0RjE2MDc2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjUxOTc1QUIxNTYwMzExRTRBNDAyQkM0RDU0RjE2MDc2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+cnfA8AAAAH9JREFUeNrsleEKwCAIhLvhew+f3P3ZYLgsjdEYKQQh5Id5XRCRMiO2MikSNBykEwBeKaxFRpGzRh4phnVA3BDCJRJ2yfC+OrDaYlddJ8iCsbuBAEjDOHJTFJzpbuy7Ad3FaUESefUV93jU/c5Unf72o29icDZxMaSprgs6BBgAyKxt3a1nEnwAAAAASUVORK5CYII=); }
+.leaflet-retina .leaflet-control-download { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3MDdBN0I3OTU2MDMxMUU0QTQwMkJDNEQ1NEYxNjA3NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3MDdBN0I3QTU2MDMxMUU0QTQwMkJDNEQ1NEYxNjA3NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjUxOTc1QUI0NTYwMzExRTRBNDAyQkM0RDU0RjE2MDc2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjcwN0E3Qjc4NTYwMzExRTRBNDAyQkM0RDU0RjE2MDc2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+CQojzQAAAT1JREFUeNrs2D8KwjAUBvBGXARBcRKceoBO3kEKvYqDB3D0AA4eRrxBN8EzCI4VBMf6Ch1KkObfM6nhe/CBFRrfT5o2qajrOompBEAAAQQQQAAB5BEkhBhUw8p+mUE55WDY455y5gKNmf/ABWVtcQ5bjZLICiCAAAIIoL8q1wfrkrLqHKcWY6TSw/hOeTitjfqiqBmlbIZhStmOad+vI4gTpcT4AnGgtDA+QS4obYxvkA3KCBMCZIIyxoQC6aCsMCFBfShrTGjQN5QTRgfk4yVJA7i0nzeU5xBekhwpk87XJ8rNEJUYYjLKtnP8puyUV43mJVdJ86DwsM4spN+sdPrF9iHW7UMubRt+UZnNSbo3hcr1dstQzQ1lruoXcyiWOXSlTAP3+uKcQ4Mp55XCvxVAAAEEEEAAAcRYHwEGAEtav6XJ+iukAAAAAElFTkSuQmCC); }
+.leaflet-control-reset { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAM1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACjBUbJAAAAEHRSTlMAFoZf7Ln2CCiaO2pIp2/ZocCM4wAAAG9JREFUOMvt0cESgyAMhOEFwZCi9n//p+0UPQrt0XH8TjkluxM9bqN4Ys6LRio7N3VN4EVhA1ePwbQfhVd/UT6mjVWnMl+1zYG5UwzgfSQGnYu0KMNNskQcZmqWZPrZTkUhFgsVXANOs9o/v3tc3wcOAAS0jrTGOgAAAABJRU5ErkJggg==); }
+.leaflet-control-zoom-fullscreen { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1MTk3NUFBQTU2MDMxMUU0QTQwMkJDNEQ1NEYxNjA3NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1MTk3NUFBQjU2MDMxMUU0QTQwMkJDNEQ1NEYxNjA3NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjM2OEQ0MTMxNTYwMDExRTRBNDAyQkM0RDU0RjE2MDc2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjM2OEQ0MTMyNTYwMDExRTRBNDAyQkM0RDU0RjE2MDc2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+BQEeMgAAANlJREFUeNrslk0KxCAMhc0we7eeVnBbEHqWuUvBI/QWTgsuwpvopD/YMoyQTWPf19S8tJRzNj3Ww3Ravwd64gUiOkUYz75WUYYIDc0g7JfJPATQoCggIuhDVwGalnANyJpLR0CRCdRgruRy2Ru3goLwtKugZRALEMfv1YKkVzMKuREg9bNXgAxUosqhLqF4bx9dNoLsztxXw0otHCtGnY40g6/4BNtb8pnfatiBCaWGYdMRw/Jxks4YQZpmeC0xN/Jz2bOrGXDs+4aElz4TlxmW/n9Btwe9BRgAzqdsuWGb4wcAAAAASUVORK5CYII=); }
+.leaflet-retina .leaflet-control-zoom-fullscreen { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1MTk3NUFBRTU2MDMxMUU0QTQwMkJDNEQ1NEYxNjA3NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1MTk3NUFBRjU2MDMxMUU0QTQwMkJDNEQ1NEYxNjA3NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjUxOTc1QUFDNTYwMzExRTRBNDAyQkM0RDU0RjE2MDc2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjUxOTc1QUFENTYwMzExRTRBNDAyQkM0RDU0RjE2MDc2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+EsH0oQAAAb5JREFUeNrsmV1qwzAMgJ2Rl8AuEQj0GIa8DXqCHCAjO9DGdoCdYLC3wl57g8Iee4TSPHo2OBBMOkuK8tMggd4kRV9IZElOjDFqS/KgNiYCJEACJEACdFeSQoySJFlFspAmIEXEK6yWALtPqxdgzEerFcDuYPUXTB1TL+7BJqIN4cXXgLgVNFfOf+jF6hvB78Pq89qKAhWGHYoDqLV6Yohz8rEWB8qsfgELxi3RVr99rMWAWiaocgCmnRvI/TN7BqjS+4Qwe/8M2mGFLNtNkNA1KLFXIBTEt8GWbSxQQ0xsjE8zFVCGSPDsO4v/uo4z4gVkUwBBP6EYTAgF/URnB+qgCoR9gSkikFwTSML31G3LgCdAAiRAkwK5rjlH2Ofeh7cUMp1Dunew5kCY7mDVbLkytT6aofXRc7c+lV9oxGDGNKf6xhJlsm7bBFAUGAxUPfX4YHpQY2AgUDVljTVmLzcWJgY1+15uaGw+EOI4n6eBcX7RNRYVppOfAahF11g7hji7pddYfXlVtL12v5q9r631oUKxwTjBXKccFWz/7K5IMNcpChD3CE1ycyN4yhVI5iEBEiABEiABEiCl/gQYAIcnRXaTTrmnAAAAAElFTkSuQmCC); background-size: 26px 26px; }
+.leaflet-container:-webkit-full-screen { width: 100% !important; height: 100% !important; z-index: 99999; }
+.leaflet-pseudo-fullscreen { position: fixed !important; width: 100% !important; height: 100% !important; top: 0px !important; left: 0px !important; z-index: 99999; }
+</style>
+
+<div id="pdftoMap" aria-hidden="true" tabindex="-1"></div>
+<script nonce="ugepNjzVondyDVz6XClr6w==" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+<script nonce="ugepNjzVondyDVz6XClr6w==" type="text/javascript">
+(function() {
+
+L.Control.FullScreen = L.Control.extend({
+options: {
+    position: 'topleft',
+    title: 'Full Screen',
+    forceSeparateButton: false,
+    forcePseudoFullscreen: false
+},
+
+onAdd: function (map) {
+    var className = 'leaflet-control-zoom-fullscreen', container;
+
+    if (map.zoomControl && !this.options.forceSeparateButton) {
+        container = map.zoomControl._container;
+    } else {
+        container = L.DomUtil.create('div', 'leaflet-bar');
+    }
+
+    this._createButton(this.options.title, className, container, this.toggleFullScreen, map);
+
+    return container;
+},
+
+_createButton: function (title, className, container, fn, context) {
+    var link = L.DomUtil.create('a', className, container);
+    link.href = '#';
+    link.title = title;
+
+    L.DomEvent
+        .addListener(link, 'click', L.DomEvent.stopPropagation)
+        .addListener(link, 'click', L.DomEvent.preventDefault)
+        .addListener(link, 'click', fn, context);
+
+    L.DomEvent
+        .addListener(container, fullScreenApi.fullScreenEventName, L.DomEvent.stopPropagation)
+        .addListener(container, fullScreenApi.fullScreenEventName, L.DomEvent.preventDefault)
+        .addListener(container, fullScreenApi.fullScreenEventName, this._handleEscKey, context);
+
+    L.DomEvent
+        .addListener(document, fullScreenApi.fullScreenEventName, L.DomEvent.stopPropagation)
+        .addListener(document, fullScreenApi.fullScreenEventName, L.DomEvent.preventDefault)
+        .addListener(document, fullScreenApi.fullScreenEventName, this._handleEscKey, context);
+
+    return link;
+},
+
+toggleFullScreen: function () {
+    this._exitFired = false;
+    var container = this._container;
+    if (this._isFullscreen) {
+        if (fullScreenApi.supportsFullScreen && !this.options.forcePseudoFullscreen) {
+            fullScreenApi.cancelFullScreen(container);
+        } else {
+            L.DomUtil.removeClass(container, 'leaflet-pseudo-fullscreen');
+        }
+        this.invalidateSize();
+        this.fire('exitFullscreen');
+        this._exitFired = true;
+        this._isFullscreen = false;
+    }
+    else {
+        if (fullScreenApi.supportsFullScreen && !this.options.forcePseudoFullscreen) {
+            fullScreenApi.requestFullScreen(container);
+        } else {
+            L.DomUtil.addClass(container, 'leaflet-pseudo-fullscreen');
+        }
+        this.invalidateSize();
+        this.fire('enterFullscreen');
+        this._isFullscreen = true;
+    }
+},
+
+_handleEscKey: function () {
+    if (!fullScreenApi.isFullScreen(this) && !this._exitFired) {
+        this.fire('exitFullscreen');
+        this._exitFired = true;
+        this._isFullscreen = false;
+    }
+}
+});
+
+L.Map.addInitHook(function () {
+if (this.options.fullscreenControl) {
+    this.fullscreenControl = L.control.fullscreen(this.options.fullscreenControlOptions);
+    this.addControl(this.fullscreenControl);
+}
+});
+
+L.control.fullscreen = function (options) {
+return new L.Control.FullScreen(options);
+};
+
+var
+fullScreenApi = {
+    supportsFullScreen: false,
+    isFullScreen: function() { return false; },
+    requestFullScreen: function() {},
+    cancelFullScreen: function() {},
+    fullScreenEventName: '',
+    prefix: ''
+},
+browserPrefixes = 'webkit moz o ms khtml'.split(' ');
+
+// vérifier la prise en charge par le pays d'origine
+if (typeof document.exitFullscreen !== 'undefined') {
+fullScreenApi.supportsFullScreen = true;
+} else {
+// vérifier la prise en charge du plein écran par le préfixe du fournisseur
+for (var i = 0, il = browserPrefixes.length; i < il; i++ ) {
+    fullScreenApi.prefix = browserPrefixes[i];
+    if (typeof document[fullScreenApi.prefix + 'CancelFullScreen' ] !== 'undefined' ) {
+        fullScreenApi.supportsFullScreen = true;
+        break;
+    }
+}
+}
+
+// mise à jour des méthodes
+if (fullScreenApi.supportsFullScreen) {
+fullScreenApi.fullScreenEventName = fullScreenApi.prefix + 'fullscreenchange';
+fullScreenApi.isFullScreen = function() {
+    switch (this.prefix) {
+        case '':
+            return document.fullScreen;
+        case 'webkit':
+            return document.webkitIsFullScreen;
+        default:
+            return document[this.prefix + 'FullScreen'];
+    }
+};
+fullScreenApi.requestFullScreen = function(el) {
+    return (this.prefix === '') ? el.requestFullscreen() : el[this.prefix + 'RequestFullScreen']();
+};
+fullScreenApi.cancelFullScreen = function(el) {
+    return (this.prefix === '') ? document.exitFullscreen() : document[this.prefix + 'CancelFullScreen']();
+};
+}
+
+// jQuery plugin
+if (typeof jQuery !== 'undefined') {
+jQuery.fn.requestFullScreen = function() {
+    return this.each(function() {
+        var el = jQuery(this);
+        if (fullScreenApi.supportsFullScreen) {
+            fullScreenApi.requestFullScreen(el);
+        }
+    });
+};
+}
+
+// exportation api
+window.fullScreenApi = fullScreenApi;
+})();
+
+
+
+L.TileLayer.Zoomify = L.TileLayer.extend({
+options: {
+continuousWorld: true,
+tolerance: 1.1
+},
+
+initialize: function (url, options) {
+options = L.setOptions(this, options);
+
+options.tileSize = Math.floor(options.tileSize / 2);
+options.zoomOffset++;
+
+if (options.minZoom > 0) {
+    options.minZoom--;
+}
+this.options.maxZoom--;
+// }*/
+
+this._url = url;
+
+var imageSize = L.point(options.width, options.height),
+    tileSize = options.tileSize;
+
+this._imageSize = [imageSize];
+this._gridSize = [this._getGridSize(imageSize)];
+
+while (parseInt(imageSize.x) > tileSize || parseInt(imageSize.y) > tileSize) {
+    imageSize = imageSize.divideBy(2).floor();
+    this._imageSize.push(imageSize);
+    this._gridSize.push(this._getGridSize(imageSize));
+}
+
+this._imageSize.reverse();
+this._gridSize.reverse();
+
+this.options.maxZoom = this._gridSize.length - 1;
+if (options.detectRetina && L.Browser.retina && options.maxZoom > 0) {
+    this.options.maxZoom--;
+}
+},
+
+onAdd: function (map) {
+L.TileLayer.prototype.onAdd.call(this, map);
+
+var mapSize = map.getSize(),
+    zoom = this._getBestFitZoom(mapSize),
+    imageSize = this._imageSize[zoom],
+    center = map.options.crs.pointToLatLng(L.point(imageSize.x / 2, imageSize.y / 2), zoom);
+
+map.setView(center, zoom, true);
+},
+
+_getGridSize: function (imageSize) {
+var tileSize = this.options.tileSize;
+return L.point(Math.ceil(imageSize.x / tileSize), Math.ceil(imageSize.y / tileSize));
+},
+
+_getBestFitZoom: function (mapSize) {
+var tolerance = this.options.tolerance,
+    zoom = this._imageSize.length - 1,
+    imageSize, zoom;
+
+while (zoom) {
+    imageSize = this._imageSize[zoom];
+    if (imageSize.x * tolerance < mapSize.x && imageSize.y * tolerance < mapSize.y) {
+        return zoom;
+    }
+    zoom--;
+}
+
+return zoom;
+},
+
+_tileShouldBeLoaded: function (tilePoint) {
+var gridSize = this._gridSize[this._map.getZoom()];
+return (tilePoint.x >= 0 && tilePoint.x < gridSize.x && tilePoint.y >= 0 && tilePoint.y < gridSize.y);
+},
+
+_addTile: function (tilePoint, container) {
+var tilePos = this._getTilePos(tilePoint),
+    tile = this._getTile(),
+    zoom = this._map.getZoom(),
+    imageSize = this._imageSize[zoom],
+    gridSize = this._gridSize[zoom],
+    tileSize = this.options.tileSize;
+
+if (tilePoint.x === gridSize.x - 1) {
+    tile.style.width = imageSize.x - (tileSize * (gridSize.x - 1)) + 'px';
+}
+
+if (tilePoint.y === gridSize.y - 1) {
+    tile.style.height = imageSize.y - (tileSize * (gridSize.y - 1)) + 'px';
+}
+
+L.DomUtil.setPosition(tile, tilePos, L.Browser.chrome || L.Browser.android23);
+
+this._tiles[tilePoint.x + ':' + tilePoint.y] = tile;
+this._loadTile(tile, tilePoint);
+
+if (tile.parentNode !== this._tileContainer) {
+    container.appendChild(tile);
+}
+},
+
+getTileUrl: function (tilePoint) {
+return this._url + 'TileGroup' + this._getTileGroup(tilePoint) + '/' + this._map.getZoom() + '-' + tilePoint.x + '-' + tilePoint.y + '.jpg';
+},
+
+_getTileGroup: function (tilePoint) {
+var zoom = this._map.getZoom(),
+    num = 0,
+    gridSize;
+
+for (z = 0; z < zoom; z++) {
+    gridSize = this._gridSize[z];
+    num += gridSize.x * gridSize.y;
+}
+
+num += tilePoint.y * this._gridSize[zoom].x + tilePoint.x;
+return Math.floor(num / 256);;
+}
+
+});
+
+L.tileLayer.zoomify = function (url, options) {
+return new L.TileLayer.Zoomify(url, options);
+};
+</script>
+<script nonce="ugepNjzVondyDVz6XClr6w==" type="text/javascript">
+var markers = [];
+var resetCenter;
+var resetZoom;
+var markerIcon = L.icon({
+iconUrl: 'https://modules.actipage.net/pdftomap/img/marker-icon.png',
+
+iconSize:     [25, 41], // taille de l'icone
+iconAnchor:   [12, 41], // point de l'icône qui correspondra à l'emplacement du marqueur
+popupAnchor:  [0, -40]
+});
+var map = L.map('pdftoMap',{
+zoomControl:true,
+detectRetina:true,
+zoomControl:false
+}).setView(new L.LatLng(0,0), 0);
+
+var zoomControl = new L.Control.Zoom({ position: 'topleft',zoomInTitle:"Zoomer",zoomOutTitle:"Dézoomer" }).addTo(map);
+
+var resetControl = L.Control.extend({
+options: {
+position: 'topleft',
+title: 'Réinitialiser'
+},
+onAdd: function (map) {
+var container;
+
+if (this.options.containerZoom != undefined) {
+    container = this.options.containerZoom;
+} else {
+    container = L.DomUtil.create('div', 'leaflet-bar');
+}
+
+var link = L.DomUtil.create('a', "leaflet-control-reset", container);
+link.title = "Réinitialiser";
+link.href = "javascript:void(0)";
+link.addEventListener("click", function () {
+    map.setView(resetCenter, resetZoom);
+});
+return container;
+}
+})
+
+map.addControl(new resetControl({containerZoom:zoomControl._container}));
+
+setTimeout(function(){
+resetCenter = map.getCenter();
+resetZoom = map.getZoom();
+window.dispatchEvent(new Event('resize'));
+}, 200);
+
+
+L.control.fullscreen({
+position: 'topright', 
+title: 'Plein écran', // changer le titre du bouton, par défaut Plein écran
+forceSeparateButton: true, // force un bouton séparé à se détacher des boutons de zoom, par défaut false
+forcePseudoFullscreen: true // forcer l'utilisation du pseudo plein écran même si l'API plein écran est disponible, par défaut false
+}).addTo(map);
+
+var downloadControl = L.Control.extend({
+options: {
+    position: 'bottomleft',
+    title: 'Télécharger le PDF'
+},
+onAdd: function (map) {
+    var container = L.DomUtil.create('div', 'leaflet-bar');
+
+    var link = L.DomUtil.create('a', "leaflet-control-download", container);
+    link.title = 'Télécharger le PDF';
+    link.href = 'https://www.lineotim.com/upload/pdftomap/10_plan.pdf';
+    link.target = "_blank";
+
+    return container;
+}
+});
+map.addControl(new downloadControl());
+
+function downloadURI(uri, name)
+{
+var link = document.createElement("a");
+link.download = name;
+link.href = uri;
+link.target="_blank";
+link.click();
+}
+
+L.tileLayer.zoomify('https://pdf2map.swarm.actigraph.com/public/tim_10/', {
+width: 10000,
+height: 7333,
+detectRetina:true,
+attribution: 'Plan généré par <a href="http://actipage.net" target="_blank">ActiPAGE</a>'
+}).addTo(map);
+
+map._layersMaxZoom=map.getMaxZoom()-1;
+for(var i=0;i<markers.length;i++){
+var element = markers[i];
+L.marker([element.lat,element.lng],{icon: markerIcon}).addTo(map)
+.bindPopup("<div class='markerView'>"+element.nom+"<br/>"+element.description);
+}
+map.setZoom(2);
+</script>
+</div>
+</div>
+
+
+                </main>
+
+                <div class="row-share text-right mb-4 d-flex flex-row justify-content-between">
+                                                                                                                                                    </div>
+                <div class="raccourcis d-block d-lg-none hidden-print mb-4 px-4 px-sm-0">
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+</div>
+</div>
+
+
+</body>
+
+<!-- Footer du site -->
+<footer>
+
+</footer>
+
+</html>

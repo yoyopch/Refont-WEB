@@ -11,6 +11,17 @@ $(document).ready(function () {
     }
   })
 
+  $(window).on("reisze", function () {
+    if ($(window).width() < 1285) {
+      if ($("nav").css("height") == ("86px")) {
+        $(".search-bar").css("display", "flex");
+      }
+      else {
+        $(".search-bar").css("display", "none");
+      }
+    }
+  })
+
   function createNavBar() {
     $("header").html(`    <!-- Navbar du site -->
     <nav>
@@ -81,9 +92,9 @@ $(document).ready(function () {
         <p><a
             href="https://www.google.fr/maps/place/29600+Morlaix/@48.5971049,-3.862543,13z/data=!3m1!4b1!4m6!3m5!1s0x481160d5e8504c13:0xcd60ce3d9a3082d3!8m2!3d48.577613!4d-3.828228!16zL20vMDVreXE3?entry=ttu">
             29600 Morlaix</a></p>
-        <p><img src="./IMG/logo/logo_phone.png" alt="phone">02 98 15 31 31</p>
-        <p><img src="./IMG/logo/logo_mail.png" alt="mail"><a
-            href="mailto:contact@villedemorlaix.org">contact@villedemorlaix.org</a> </p>
+        <p><a href="tel:0298153131"><img src="./IMG/logo/logo_phone.png" alt="phone"><a href="tel:0298153131">02 98 15 31 31</a></a></p>
+        <p><a href="mailto:contact@villedemorlaix.org"><img src="./IMG/logo/logo_mail.png" alt="mail"><a
+            href="mailto:contact@villedemorlaix.org">contact@villedemorlaix.org</a> <a/></p>
       </div>
       <div class="info-abo reveal">
         <h4>Newsletter</h4>
