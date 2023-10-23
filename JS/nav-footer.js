@@ -41,10 +41,10 @@ $(document).ready(function () {
 
 
             <ul>
-              <li><a href="./index.html">Présentation</a></li>
-              <li><a href="./index.html">Histoire</a></li>
+              <li><a href="">Présentation</a></li>
+              <li><a href="">Histoire</a></li>
               <li><a href="services.html">Services publics</a></li>
-              <li><a href="./index.html">Territoire</a></li>
+              <li><a href="">Territoire</a></li>
             </ul>
           </li>
           <li>
@@ -52,11 +52,11 @@ $(document).ready(function () {
             <a>Sortir et Bouger</a>
             <input type="checkbox" name="" id="btn-2">
             <ul>
-              <li><a href="#">Les Espaces Sociaux Culturels</a></li>
-              <li><a href="#">Vie sportive</a></li>
-              <li><a href="#">Vacances</a></li>
-              <li><a href="#">Activités et Loisirs</a></li>
-              <li><a href="#">Annuaire des associations</a></li>
+              <li><a href="">Les Espaces Sociaux Culturels</a></li>
+              <li><a href="">Vie sportive</a></li>
+              <li><a href="">Vacances</a></li>
+              <li><a href="">Activités et Loisirs</a></li>
+              <li><a href="">Annuaire des associations</a></li>
             </ul>
           </li>
           <li>
@@ -65,11 +65,11 @@ $(document).ready(function () {
             <input type="checkbox" name="" id="btn-3">
             <ul>
               <li><a href="./gestion.html">Gestions Déchets</a></li>
-              <li><a href="#">Espaces Verts</a></li>
-              <li><a href="#">Logements</a></li>
+              <li><a href="">Espaces Verts</a></li>
+              <li><a href="">Logements</a></li>
               <li><a href="./transports.html">Transports</a></li>
-              <li><a href="#">Eau et Energie</a></li>
-              <li><a href="#">Economie et Commerces</a></li>
+              <li><a href="">Eau et Energie</a></li>
+              <li><a href="">Economie et Commerces</a></li>
             </ul>
           </li>
         </ul>
@@ -100,6 +100,7 @@ $(document).ready(function () {
         <h4>Newsletter</h4>
         <p>Suivez-nous pour plus d'actualités</p>
         <button id="button">S'abonner</button>
+        <p id="abonne"></p>
       </div>
       <div class="reseau-ville reveal">
         <h4>Retrouvez-nous sur :</h4>
@@ -125,6 +126,15 @@ $(document).ready(function () {
     </div>`)
   }
 
+  $("#button").on("click", function () {
+    $("#button").html("").append(`
+      <span class="material-symbols-outlined">
+        done
+      </span>`);
+      $("#button").off("click");
+      $("#abonne").text("Vous êtes désormais inscris à notre newsletter.");
+  })
+  
 
 
 })

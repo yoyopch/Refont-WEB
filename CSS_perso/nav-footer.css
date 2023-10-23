@@ -126,6 +126,7 @@ input:not(input[id="search-input"]) {
 
 
 
+
 @media screen and (max-width : 1285px) {
 
     /* responsive de la navbar */
@@ -156,7 +157,7 @@ input:not(input[id="search-input"]) {
 
         transition-property: height;
         transition-duration: 2s;
-        transition-timing-function:linear;
+        transition-timing-function: linear;
     }
 
 
@@ -326,4 +327,9 @@ footer {
 
 footer a:hover {
     color: rgb(145, 138, 138);
+}
+
+.logo img:hover,
+#button:hover {
+    transform: scale(1.1);
 }

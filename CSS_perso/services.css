@@ -1,0 +1,56 @@
+.carousel-item img:hover {
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.texte-carousel {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    display: none;
+    text-align: center;
+}
+
+.texte-carousel small {
+    color: white;
+}
+
+.texte-carousel h2 a,
+.texte-carousel small a,
+.texte-carousel h3 a,
+.texte-carousel h4 a {
+    color: white;
+    text-decoration: none;
+}
+
+.texte-carousel h2,
+.texte-carousel h3,
+.texte-carousel h4 {
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.carousel-item h1 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    color: white;
+    display: none;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#map iframe {
+    width: 90%;
+    border: 2px solid black;
+    margin: 3% 5% 3% 5%;
+}
