@@ -35,7 +35,7 @@ function init() {
 
     $(".trib").on("click", function () {
         $("#map").html(`
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.9450534904273!2d-3.819245646077386!3d48.57579247416806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x481167385fd563f1%3A0x8e165a177617461b!2sCentre%20des%20finances%20publiques!5e0!3m2!1sfr!2sfr!4v1698098778565!5m2!1sfr!2sfr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.9374262953628!2d-3.8241464484535093!3d48.576487315741176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x481166d1fe1e02cd%3A0x53cbdedcf00db80e!2sTribunal%20d&#39;instance!5e0!3m2!1sfr!2sfr!4v1698098803730!5m2!1sfr!2sfr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`);
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.9374262953628!2d-3.8241464484535093!3d48.576487315741176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x481166d1fe1e02cd%3A0x53cbdedcf00db80e!2sTribunal%20d&#39;instance!5e0!3m2!1sfr!2sfr!4v1698098803730!5m2!1sfr!2sfr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`);
 
     })
 }

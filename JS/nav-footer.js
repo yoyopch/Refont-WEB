@@ -105,13 +105,13 @@ $(document).ready(function () {
       <div class="reseau-ville reveal">
         <h4>Retrouvez-nous sur :</h4>
         <div class="logo">
-          <a href="https://fr-fr.facebook.com/MorlaixCommunauteOfficiel/"><img src="./IMG/logo/logo_facebook.png"
+          <a href="https://fr-fr.facebook.com/MorlaixCommunauteOfficiel/" target="_blank"><img src="./IMG/logo/logo_facebook.png"
               alt="facebook" width="40" height="40"></a>
-          <a href="https://twitter.com/MorlaixCo"><img src="./IMG/logo/logo_twitter.png" alt="X" width="40"
+          <a href="https://twitter.com/MorlaixCo"target="_blank"><img src="./IMG/logo/logo_twitter.png" alt="X" width="40"
               height="40"></a>
-          <a href="https://fr.linkedin.com/company/morlaix-communaut-"><img src="./IMG/logo/logo_in.png" alt="LinkedIn"
+          <a href="https://fr.linkedin.com/company/morlaix-communaut-"target="_blank"><img src="./IMG/logo/logo_in.png" alt="LinkedIn"
               width="40" height="40"></a>
-          <a href="https://www.youtube.com/channel/UCAcE83q1zUPXpqHVHLN0Zaw"><img src="./IMG/logo/logo_ytb.png"
+          <a href="https://www.youtube.com/channel/UCAcE83q1zUPXpqHVHLN0Zaw"target="_blank"><img src="./IMG/logo/logo_ytb.png"
               alt="YouTube" width="50" height="40"></a>
         </div>
   
