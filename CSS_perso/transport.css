@@ -330,7 +330,7 @@ div #chemin p a:visited {
 
 
 
-@media (min-width:300px) and (max-width:511px) {
+@media screen and (max-width:768px) {
 
     .trapez {
         width: 90%;
@@ -376,7 +376,6 @@ div #chemin p a:visited {
     }
 
     .reveal.active {
-        transform: translateX(0px);
         opacity: 1;
     }
 
@@ -389,7 +388,7 @@ div #chemin p a:visited {
 
 
 
-@media screen and (max-width:1266px) {
+@media screen and (max-width:1285px) {
 
 
     /* Responsive des transports */
