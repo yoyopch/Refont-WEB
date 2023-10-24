@@ -6,10 +6,12 @@ $(document).ready(function () {
 
   function checkAbonne() {
     if (localStorage.getItem("abonne") == "true") {
+      $("#button").off("click");
       $("#button").html("").append(`
       <span class="material-symbols-outlined">
         done
       </span>`);
+
       $("#abonne").text("Vous êtes désormais inscrit à notre newsletter.");
     }
   }
@@ -140,14 +142,17 @@ $(document).ready(function () {
   }
 
   $("#button").on("click", function () {
-    $("#button").html("").append(`
+    if (!(localStorage.getItem("abonne") == "true")) {
+      $("#button").html("").append(`
       <span class="material-symbols-outlined">
         done
       </span>`);
-    $("#button").off("click");
-    $("#audioPlayer")[0].play();
-    localStorage.setItem("abonne", "true");
-    $("#abonne").text("Vous êtes désormais inscrit à notre newsletter.");
+      $("#button").off("click");
+      $("#audioPlayer")[0].play();
+      localStorage.setItem("abonne", "true");
+      $("#abonne").text("Vous êtes désormais inscrit à notre newsletter.");
+    }
+
   })
 
 
