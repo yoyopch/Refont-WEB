@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $(".top-actu-left").append(`
     <div class="card" >
-        <img class="card-img-top" src="./IMG/top-actu-1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="./IMG/accueil/top-actu-1.jpg" alt="Card image cap">
         <div class="card-body">
             <p class="card-text">Partez à la découverte de la faune et la flore d'exception du territoire
             </p>
@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     $(".top-actu-right").append(`
     <div class="card" >
-        <img class="card-img-top" src="./IMG/top-actu-2.jpg" alt="Card image cap">
+        <img class="card-img-top" src="./IMG/accueil/top-actu-2.jpg" alt="Card image cap">
         <div class="card-body">
             <p class="card-text">Cela porte sur l'état d'avancement du projet d'ouverture de la rivière de Morlaix…
             </p>
@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     $("#info1").append(`
     <div class="card" >
-        <img class="card-img-top" src="./IMG/bot-actu1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="./IMG/accueil/bot-actu1.jpg" alt="Card image cap">
         <div class="card-body">
             <p class="card-text">Place au spectacle vivant, aux arts de rue dans toute leur diversité, à travers une programmation de qualité, gratuite et tout public …
 
@@ -32,7 +32,7 @@ $(document).ready(function () {
 
     $("#info2").append(`
     <div class="card" >
-        <img class="card-img-top" src="./IMG/bot-info2.jpg" alt="Card image cap">
+        <img class="card-img-top" src="./IMG/accueil/bot-info2.jpg" alt="Card image cap">
         <div class="card-body">
             <p class="card-text">Profitez des navettes estivales à Carantec, Locquirec et Plougasnou pour vous rendre jusqu’aux plages et …
             </p>
@@ -41,7 +41,7 @@ $(document).ready(function () {
 
     $("#info3").append(`
     <div class="card" >
-        <img class="card-img-top" src="./IMG/bot-actu3.jpg" alt="Card image cap">
+        <img class="card-img-top" src="./IMG/accueil/bot-actu3.jpg" alt="Card image cap">
         <div class="card-body">
             <p class="card-text">Profitez des nombreuses animations proposées par ses occupants pour déambuler entre les jardins et …
             </p>
