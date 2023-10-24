@@ -13,9 +13,11 @@
     color: black;
     text-decoration: none;
 }
-.chemin a:hover{
+
+.chemin a:hover {
     font-size: larger;
 }
+
 .carousel-item img:hover {
     filter: brightness(50%);
     transition: 0.3s;
@@ -64,11 +66,55 @@
 #map {
     display: flex;
     justify-content: center;
-
+    background-color: var(--c6);
 }
 
 #map iframe {
     width: 90%;
     border: 2px solid black;
     margin: 3% 5% 3% 5%;
+}
+
+@media screen and (max-width:1285px) {
+    .texte-carousel {
+        top: 40%;
+    }
+
+    .texte-carousel h2,
+    .texte-carousel h3,
+    .texte-carousel h4 {
+        font-size: medium;
+        margin-top: 10px;
+    }
+
+    .carousel-item h1 {
+        font-size: large;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .carousel-indicators {
+        margin-bottom: 0;
+    }
+
+    .texte-carousel {
+        top: 40%;
+    }
+
+    .texte-carousel h2,
+    .texte-carousel h3,
+    .texte-carousel h4,
+    .texte-carousel small {
+        font-size: x-small;
+        margin-top: 0;
+    }
+
+    .texte-carousel small {
+        padding-top: 0;
+    }
+
+    .carousel-item h1 {
+        font-size: small;
+    }
 }

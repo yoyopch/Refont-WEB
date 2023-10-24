@@ -140,36 +140,17 @@ h2 {
 }
 
 
-@media screen and (max-width:768px) {
 
-    .renseignement,
-    #carte_txt {
-        display: flex;
-        flex-direction: column;
-        width: 96%;
-        margin-left: 2%;
-        margin-right: 2%;
-    }
 
-    div #carte {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #map {
-        width: 90%;
-    }
-
-    .cat {
-        display: flex;
-        flex-direction: column;
-    }
-    [class^="cat-"] {
-        margin-top: 5%;
-    }
-}
 
 @media screen and (max-width:1285px) {
+    #map {
+        width: 40%;
+    }
+    #map iframe {
+        width: 100%;
+    }
+
     .contenu {
         display: flex;
         flex-direction: column;
@@ -189,5 +170,52 @@ h2 {
     .cat {
         padding-top: 3%;
         width: 85%;
+    }
+
+    .cat img {
+        width: 90%;
+    }
+
+    [class^="cat-"] {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:768px) {
+
+    #map iframe {
+        width: 100%;
+        margin: 0;
+    }
+    #map{
+        width: 90%;
+    }
+
+    .renseignement,
+    #carte_txt {
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    div #carte {
+        display: flex;
+        flex-direction: column;
+    }
+
+ 
+    .cat {
+        display: flex;
+        flex-direction: column;
+    }
+
+    [class^="cat-"] {
+        margin-top: 5%;
+        margin-left: 0;
+    }
+
+    .cat img {
+        width: 100%;
     }
 }

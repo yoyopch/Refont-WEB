@@ -132,7 +132,7 @@ $(document).ready(function () {
         done
       </span>`);
       $("#button").off("click");
-      $("#abonne").text("Vous êtes désormais inscris à notre newsletter.");
+      $("#abonne").text("Vous êtes désormais inscrit à notre newsletter.");
   })
   
 
