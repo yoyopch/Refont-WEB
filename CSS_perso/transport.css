@@ -270,7 +270,58 @@ body {
 
 
 
+@media screen and (max-width:1285px) {
 
+
+    .top-actus {
+        display: block;
+        padding-bottom: 5px;
+    }
+
+    .top-actu-left,
+    .top-actu-right {
+        width: 70%;
+        height: auto;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 20px;
+    }
+
+    .actu-bot {
+        display: none;
+        flex-direction: column;
+    }
+
+    .actu-bot-info {
+        height: auto;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .trapez {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        z-index: 999;
+        font-weight: bold;
+    }
+
+    .trapez p {
+        font-size: small;
+    }
+
+    .actimodule {
+        margin-top: 10%;
+        margin-bottom: 3%;
+    }
+
+    #pdftoMap{
+        width: 90%;
+    }
+
+
+}
 
 
 @media screen and (max-width:768px) {
@@ -328,7 +379,7 @@ body {
 
 
     .actimodule {
-        margin-top: 15%;
+        margin-top: 20%;
         margin-bottom: 3%;
     }
 
@@ -340,55 +391,3 @@ body {
 
 
 
-@media screen and (max-width:1285px) {
-
-
-    .top-actus {
-        display: block;
-        padding-bottom: 5px;
-    }
-
-    .top-actu-left,
-    .top-actu-right {
-        width: 70%;
-        height: auto;
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-bottom: 20px;
-    }
-
-    .actu-bot {
-        display: none;
-        flex-direction: column;
-    }
-
-    .actu-bot-info {
-        height: auto;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .trapez {
-        width: 50%;
-        margin-left: 25%;
-        margin-right: 25%;
-        z-index: 999;
-        font-weight: bold;
-    }
-
-    .trapez p {
-        font-size: small;
-    }
-
-    .actimodule {
-        margin-top: 10%;
-        margin-bottom: 3%;
-    }
-
-    #pdftoMap{
-        width: 90%;
-    }
-
-
-}

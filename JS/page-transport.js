@@ -490,7 +490,7 @@ $(document).ready(function () {
         L.marker([element.lat, element.lng], { icon: markerIcon }).addTo(map)
             .bindPopup("<div class='markerView'>" + element.nom + "<br/>" + element.description);
     }
-    map.setZoom(2);
+    map.setZoom(4);
 
 
 }
