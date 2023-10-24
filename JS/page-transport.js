@@ -56,18 +56,14 @@ $(document).ready(function () {
     // Deploiement des autres transports
     $("#more-transport").text("Autres rubriques...");
     $("#more-transport").css("cursor", "pointer");
-    var moreTransp = 1;
+    
     $("#more-transport").on("click", function () {
-        if (moreTransp == 0) {
-            $(".second-transport")[0].classList.remove("extend");
-            $("#more-transport").text("Voir plus");
-            moreTransp = 1;
-        } else {
-            $(".second-transport")[0].classList.add("extend");
-            $("#more-transport").text("Voir moins");
-            moreTransp = 0;
-        }
 
+        $(".second-transport").slideToggle();
+        $(".second-transport").css("display","flex").css("justify-content","space-evenly");
+        $("#more-transport").text(function(i, text){
+            return text === "Voir plus" ? "Voir plus" : "Voir moins";
+          });
     })
 
 
