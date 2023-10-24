@@ -51,87 +51,74 @@ body {
 
 
 
-/* Style des titres section */
 
-/* gestion de lien */
-div #chemin p a:link,
-div #chemin p a:visited {
-    color: black;
-    font-size: 40;
-    font-weight: 700;
-    text-decoration: none;
+.enteteImg img {
+    width: 100%;
 }
 
-.title-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-}
-
-.title-section span {
-    font-size: xxx-large;
-    transform: rotate(1deg);
-    padding-right: 20px;
-}
-
-/*Style de la div nouveautes*/
-
-.nouveautes {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
+.chemin {
+    padding-top: 20px;
     padding-bottom: 20px;
-}
-
-/* Alignement entre l'icone et le texte */
-
-.contenu-transport {
-    display: block;
-    margin-top: 25px;
+    padding-left: 5%;
     background-color: var(--c6);
 }
 
-.top-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.chemin a {
+    color: black;
+    text-decoration: none;
 }
 
-.top-img-one {
-    width: 50%;
+.chemin a:hover {
+    font-size: larger;
+}
+
+
+.actu {
+    background-color: var(--c6);
+    display: block;
+    padding-top: 3%;
+}
+
+
+.actus-bloc {
+    display: block;
+    margin-top: 15px;
+}
+
+.top-actus {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top-actu-left {
+    width: 40%;
     height: 100%;
 }
 
-.top-img-one.reveal {
+.top-actu-left.reveal {
     transform: translateX(-150px);
     opacity: 0;
     transition: all 2s ease;
 }
 
-.top-img-one.reveal.active {
+.top-actu-left.reveal.active {
     transform: translateX(0px);
     opacity: 1;
 }
 
-
-.top-img-two.reveal {
+.top-actu-right.reveal {
     transform: translateX(150px);
     opacity: 0;
     transition: all 2s ease;
 }
 
-.top-img-two.reveal.active {
+.top-actu-right.reveal.active {
     transform: translateX(0px);
     opacity: 1;
 }
 
 
-.texte-content {
+.texte-actu {
     background-color: rgb(86, 70, 70);
     height: 35%;
     width: 100%;
@@ -140,38 +127,13 @@ div #chemin p a:visited {
     justify-content: space-evenly;
 }
 
-.top-img-two {
-    width: 50%;
+.top-actu-right {
+    width: 40%;
     height: 100%;
-}
-
-.top-img-one,
-.top-img-two {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .card {
     border: none;
-    width: 55rem;
-    height: 55rem;
-    margin: 5px;
-}
-
-.card-part {
-    border: none;
-    padding-top: -12px;
-    height: 29rem;
-    margin: 3px;
-}
-
-.card-part img {
-    transition: 1s;
-}
-
-.card-part img:hover {
-    transform: scale(1.1);
 }
 
 .card img {
@@ -191,53 +153,35 @@ div #chemin p a:visited {
     color: black;
 }
 
-
-.second-transport {
+.actu-bot {
     display: none;
 }
 
-.second-transport-info {
+.actu-bot.extend {
+    justify-content: space-evenly;
+}
+
+.actu-bot-info {
     margin-top: 5%;
     width: 25%;
     height: 70%;
     background-color: var(--c6);
-    display: flex;
-    position: relative;
-    flex-direction: row-reverse;
-    min-width: 0;
-    word-wrap: break-word;
-    background-clip: border-box;
-    flex-wrap: wrap;
-    align-content: stretch;
-    align-items: center;
-    justify-content: space-around;
 }
 
-.second-transport-info .card-part {
-    width: 476px;
-}
 
-.second-transport.extend {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-
-.info-top {
-    margin-top: 100px;
-}
 
 
 .trapez {
     width: 20%;
+    position: absolute;
     border-top: 50px solid var(--c6);
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     margin-left: 40%;
-
     margin-right: 40%;
     z-index: 999;
-    margin-bottom: 5%;
+    font-weight: bold;
+    padding-bottom: 5%;
 }
 
 .trapez p {
@@ -246,22 +190,21 @@ div #chemin p a:visited {
     margin-top: -50px;
 }
 
-.nouveautes h2 {
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
 
 
 
 /* Map */
 
+
+
+.actimodule {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+
 #pdftoMap {
-    width: 550px;
+    width: 60%;
     height: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -337,10 +280,11 @@ div #chemin p a:visited {
         margin-left: 5%;
         margin-right: 5%;
         z-index: 999;
+        font-weight: bold;
     }
 
     .trapez p {
-        font-size: 18px;
+        font-size: small;
     }
 
 
@@ -370,7 +314,6 @@ div #chemin p a:visited {
 
 
     .reveal {
-        transform: translateX(150px);
         opacity: 0;
         transition: all 2s ease;
     }
@@ -384,6 +327,15 @@ div #chemin p a:visited {
     }
 
 
+    .actimodule {
+        margin-top: 15%;
+        margin-bottom: 3%;
+    }
+
+    #pdftoMap{
+        width: 90%;
+    }
+
 }
 
 
@@ -391,24 +343,13 @@ div #chemin p a:visited {
 @media screen and (max-width:1285px) {
 
 
-    /* Responsive des transports */
-    .top-content {
+    .top-actus {
         display: block;
         padding-bottom: 5px;
     }
 
-    .card-body {
-        height: 20%;
-        font-size: 15px;
-    }
-
-    .second-transport-info {
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-
-    .top-img-one.reveal,
-    .top-img-two.reveal {
+    .top-actu-left,
+    .top-actu-right {
         width: 70%;
         height: auto;
         margin-left: 15%;
@@ -416,31 +357,38 @@ div #chemin p a:visited {
         margin-bottom: 20px;
     }
 
-    .second-transport {
+    .actu-bot {
         display: none;
         flex-direction: column;
     }
 
-    .card-part {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 200px;
-        height: 18rem;
-        flex-direction: column;
+    .actu-bot-info {
+        height: auto;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    .nouveautes h2 {
-        font-size: 30px;
-    }
-
-
 
     .trapez {
         width: 50%;
         margin-left: 25%;
         margin-right: 25%;
         z-index: 999;
+        font-weight: bold;
     }
+
+    .trapez p {
+        font-size: small;
+    }
+
+    .actimodule {
+        margin-top: 10%;
+        margin-bottom: 3%;
+    }
+
+    #pdftoMap{
+        width: 90%;
+    }
+
 
 }

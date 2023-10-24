@@ -1,9 +1,8 @@
 $(document).ready(function () {
 
-    $("#chemin").html(" <p><a href='index.html'>Accueil</a> > <a href='gestion.html'>Organisation de nos déchets</a></p> ");
 
 
-    $(".top-img-one").append(`
+    $(".top-actu-left").append(`
     <div class="card" >
         <img class="card-img-top" src="./IMG/transport/navette.jpg" alt="Card image cap">
         <div class="card-body">
@@ -13,7 +12,7 @@ $(document).ready(function () {
     </div>`);
 
 
-    $(".top-img-two").append(`
+    $(".top-actu-right").append(`
     <div class="card" >
         <img class="card-img-top" src="./IMG/transport/Velo.jpeg" alt="Card image cap">
         <div class="card-body">
@@ -25,7 +24,7 @@ $(document).ready(function () {
 
 
     $("#info1").append(`
-    <div class="card-part" >
+    <div class="card" >
         <img class="card-img-top" src="./IMG/transport/bus.jpg" alt="Card image cap">
         <div class="card-body">
             <p class="card-text">Place au spectacle vivant, aux arts de rue dans toute leur diversité…
@@ -35,7 +34,7 @@ $(document).ready(function () {
     </div>`);
 
     $("#info2").append(`
-    <div class="card-part" >
+    <div class="card" >
         <img class="card-img-top" src="./IMG/transport/train.jpg" alt="Card image cap">
         <div class="card-body">
             <p class="card-text">
@@ -45,7 +44,7 @@ $(document).ready(function () {
     </div>`);
 
     $("#info3").append(`
-    <div class="card-part" >
+    <div class="card" >
         <img class="card-img-top" src="./IMG/transport/Ouestgo.jpg" alt="Card image cap">
         <div class="card-body">
             <p class="card-text">Plate-forme de covoiturage de proximité, convivial et solidaire.
@@ -53,18 +52,19 @@ $(document).ready(function () {
         </div>
     </div>`);
 
-    // Deploiement des autres transports
-    $("#more-transport").text("Autres rubriques...");
-    $("#more-transport").css("cursor", "pointer");
-    
-    $("#more-transport").on("click", function () {
 
-        $(".second-transport").slideToggle();
-        $(".second-transport").css("display","flex").css("justify-content","space-evenly");
-        $("#more-transport").text(function(i, text){
-            return text === "Voir plus" ? "Voir plus" : "Voir moins";
-          });
+    // Deploiement des actus
+    $("#more-actus").text("Autres rubriques...");
+    $("#more-actus").css("cursor", "pointer");
+    $("#more-actus").on("click", function () {
+
+        $(".actu-bot").slideToggle();
+        $(".actu-bot").css("display", "flex").css("justify-content", "space-evenly");
+        $("#more-actus").text(function (i, text) {
+            return text === "Autres rubriques..." ? "Voir moins" : "Autres rubriques...";
+        });
     })
+
 
 
     $(window).on("scroll", reveal);
@@ -84,6 +84,12 @@ $(document).ready(function () {
     }
 
 
+
+
+
+
+
+    // map
 
 
     (function () {
@@ -387,104 +393,104 @@ $(document).ready(function () {
 
 
 
-var markers = [];
-            var resetCenter;
-            var resetZoom;
-            var markerIcon = L.icon({
-                iconUrl: 'https://modules.actipage.net/pdftomap/img/marker-icon.png',
+    var markers = [];
+    var resetCenter;
+    var resetZoom;
+    var markerIcon = L.icon({
+        iconUrl: 'https://modules.actipage.net/pdftomap/img/marker-icon.png',
 
-                iconSize: [25, 41], // size of the icon
-                iconAnchor: [12, 41], // point of the icon which will correspond to marker's location
-                popupAnchor: [0, -40]
-            });
-            var map = L.map('pdftoMap', {
-                zoomControl: true,
-                detectRetina: true,
-                zoomControl: false
-            }).setView(new L.LatLng(0, 0), 0);
+        iconSize: [25, 41], // size of the icon
+        iconAnchor: [12, 41], // point of the icon which will correspond to marker's location
+        popupAnchor: [0, -40]
+    });
+    var map = L.map('pdftoMap', {
+        zoomControl: true,
+        detectRetina: true,
+        zoomControl: false
+    }).setView(new L.LatLng(0, 0), 0);
 
-            var zoomControl = new L.Control.Zoom({ position: 'topleft', zoomInTitle: "Zoomer", zoomOutTitle: "Dézoomer" }).addTo(map);
+    var zoomControl = new L.Control.Zoom({ position: 'topleft', zoomInTitle: "Zoomer", zoomOutTitle: "Dézoomer" }).addTo(map);
 
-            var resetControl = L.Control.extend({
-                options: {
-                    position: 'topleft',
-                    title: 'Réinitialiser'
-                },
-                onAdd: function (map) {
-                    var container;
+    var resetControl = L.Control.extend({
+        options: {
+            position: 'topleft',
+            title: 'Réinitialiser'
+        },
+        onAdd: function (map) {
+            var container;
 
-                    if (this.options.containerZoom != undefined) {
-                        container = this.options.containerZoom;
-                    } else {
-                        container = L.DomUtil.create('div', 'leaflet-bar');
-                    }
-
-                    var link = L.DomUtil.create('a', "leaflet-control-reset", container);
-                    link.title = "Réinitialiser";
-                    link.href = "javascript:void(0)";
-                    link.addEventListener("click", function () {
-                        map.setView(resetCenter, resetZoom);
-                    });
-                    return container;
-                }
-            })
-
-            map.addControl(new resetControl({ containerZoom: zoomControl._container }));
-
-            setTimeout(function () {
-                resetCenter = map.getCenter();
-                resetZoom = map.getZoom();
-                window.dispatchEvent(new Event('resize'));
-            }, 200);
-
-
-            L.control.fullscreen({
-                position: 'topright', // change the position of the button can be topleft, topright, bottomright or bottomleft, defaut topleft
-                title: 'Plein écran', // change the title of the button, default Full Screen
-                forceSeparateButton: true, // force seperate button to detach from zoom buttons, default false
-                forcePseudoFullscreen: true // force use of pseudo full screen even if full screen API is available, default false
-            }).addTo(map);
-
-            var downloadControl = L.Control.extend({
-                options: {
-                    position: 'bottomleft',
-                    title: 'Télécharger le PDF'
-                },
-                onAdd: function (map) {
-                    var container = L.DomUtil.create('div', 'leaflet-bar');
-
-                    var link = L.DomUtil.create('a', "leaflet-control-download", container);
-                    link.title = 'Télécharger le PDF';
-                    link.href = 'https://www.lineotim.com/upload/pdftomap/10_plan.pdf';
-                    link.target = "_blank";
-
-                    return container;
-                }
-            });
-            map.addControl(new downloadControl());
-
-            function downloadURI(uri, name) {
-                var link = document.createElement("a");
-                link.download = name;
-                link.href = uri;
-                link.target = "_blank";
-                link.click();
+            if (this.options.containerZoom != undefined) {
+                container = this.options.containerZoom;
+            } else {
+                container = L.DomUtil.create('div', 'leaflet-bar');
             }
 
-            L.tileLayer.zoomify('https://pdf2map.swarm.actigraph.com/public/tim_10/', {
-                width: 10000,
-                height: 7333,
-                detectRetina: true,
-                attribution: 'Plan généré par <a href="http://actipage.net" target="_blank">ActiPAGE</a>'
-            }).addTo(map);
+            var link = L.DomUtil.create('a', "leaflet-control-reset", container);
+            link.title = "Réinitialiser";
+            link.href = "javascript:void(0)";
+            link.addEventListener("click", function () {
+                map.setView(resetCenter, resetZoom);
+            });
+            return container;
+        }
+    })
 
-            map._layersMaxZoom = map.getMaxZoom() - 1;
-            for (var i = 0; i < markers.length; i++) {
-                var element = markers[i];
-                L.marker([element.lat, element.lng], { icon: markerIcon }).addTo(map)
-                    .bindPopup("<div class='markerView'>" + element.nom + "<br/>" + element.description);
-            }
-            map.setZoom(2);
+    map.addControl(new resetControl({ containerZoom: zoomControl._container }));
+
+    setTimeout(function () {
+        resetCenter = map.getCenter();
+        resetZoom = map.getZoom();
+        window.dispatchEvent(new Event('resize'));
+    }, 200);
+
+
+    L.control.fullscreen({
+        position: 'topright', // change the position of the button can be topleft, topright, bottomright or bottomleft, defaut topleft
+        title: 'Plein écran', // change the title of the button, default Full Screen
+        forceSeparateButton: true, // force seperate button to detach from zoom buttons, default false
+        forcePseudoFullscreen: true // force use of pseudo full screen even if full screen API is available, default false
+    }).addTo(map);
+
+    var downloadControl = L.Control.extend({
+        options: {
+            position: 'bottomleft',
+            title: 'Télécharger le PDF'
+        },
+        onAdd: function (map) {
+            var container = L.DomUtil.create('div', 'leaflet-bar');
+
+            var link = L.DomUtil.create('a', "leaflet-control-download", container);
+            link.title = 'Télécharger le PDF';
+            link.href = 'https://www.lineotim.com/upload/pdftomap/10_plan.pdf';
+            link.target = "_blank";
+
+            return container;
+        }
+    });
+    map.addControl(new downloadControl());
+
+    function downloadURI(uri, name) {
+        var link = document.createElement("a");
+        link.download = name;
+        link.href = uri;
+        link.target = "_blank";
+        link.click();
+    }
+
+    L.tileLayer.zoomify('https://pdf2map.swarm.actigraph.com/public/tim_10/', {
+        width: 10000,
+        height: 7333,
+        detectRetina: true,
+        attribution: 'Plan généré par <a href="http://actipage.net" target="_blank">ActiPAGE</a>'
+    }).addTo(map);
+
+    map._layersMaxZoom = map.getMaxZoom() - 1;
+    for (var i = 0; i < markers.length; i++) {
+        var element = markers[i];
+        L.marker([element.lat, element.lng], { icon: markerIcon }).addTo(map)
+            .bindPopup("<div class='markerView'>" + element.nom + "<br/>" + element.description);
+    }
+    map.setZoom(2);
 
 
 }

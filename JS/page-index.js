@@ -53,21 +53,7 @@ $(document).ready(function () {
     $("#more-actus").text("+ d'actualités");
     $("#more-actus").css("cursor", "pointer");
     $("#more-actus").on("click", function () {
-        /*
-        if (moreActu == 0) {
-            $(".actu-bot").css("display", "none");
-            $(".actu-bot")[0].classList.remove("extend");
-            $("#more-actus").text("+ d'actualités");
-            moreActu = 1;
-        } else {
-            $(".actu-bot").css("display", "flex");
-            setTimeout(() => {
-                $(".actu-bot")[0].classList.add("extend");
-            }, 10);
-            $("#more-actus").text("- d'actualités");
-            moreActu = 0;
-        }
-        */
+    
         $(".actu-bot").slideToggle();
         $(".actu-bot").css("display","flex").css("justify-content","space-evenly");
         $("#more-actus").text(function(i, text){
