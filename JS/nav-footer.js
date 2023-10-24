@@ -1,6 +1,18 @@
 $(document).ready(function () {
   createNavBar();
   createFooter();
+  checkAbonne();
+
+
+  function checkAbonne() {
+    if (localStorage.getItem("abonne") == "true") {
+      $("#button").html("").append(`
+      <span class="material-symbols-outlined">
+        done
+      </span>`);
+      $("#abonne").text("Vous êtes désormais inscrit à notre newsletter.");
+    }
+  }
 
   $(".icon").on("click", function () {
     if ($("nav").css("height") == ("86px")) {
@@ -100,6 +112,7 @@ $(document).ready(function () {
         <h4>Newsletter</h4>
         <p>Suivez-nous pour plus d'actualités</p>
         <button id="button">S'abonner</button>
+        <audio id="audioPlayer" src="../VID/subscribe_sound.mp3"></audio>
         <p id="abonne"></p>
       </div>
       <div class="reseau-ville reveal">
@@ -131,10 +144,12 @@ $(document).ready(function () {
       <span class="material-symbols-outlined">
         done
       </span>`);
-      $("#button").off("click");
-      $("#abonne").text("Vous êtes désormais inscrit à notre newsletter.");
+    $("#button").off("click");
+    $("#audioPlayer")[0].play();
+    localStorage.setItem("abonne", "true");
+    $("#abonne").text("Vous êtes désormais inscrit à notre newsletter.");
   })
-  
+
 
 
 })
