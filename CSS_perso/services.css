@@ -1,3 +1,21 @@
+.enteteImg img {
+    width: 100%;
+}
+
+.chemin {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    background-color: var(--c6);
+}
+
+.chemin a {
+    color: black;
+    text-decoration: none;
+}
+.chemin a:hover{
+    font-size: larger;
+}
 .carousel-item img:hover {
     filter: brightness(50%);
     transition: 0.3s;
@@ -46,7 +64,7 @@
 #map {
     display: flex;
     justify-content: center;
-    
+
 }
 
 #map iframe {
