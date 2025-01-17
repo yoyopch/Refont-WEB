@@ -97,6 +97,10 @@ nav ul ul li a {
     line-height: 50px;
 }
 
+.inactif{
+    color: #2A9D8F;
+}
+
 
 /* Styles pour la barre de recherche */
 .search-bar {
