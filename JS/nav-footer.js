@@ -55,10 +55,10 @@ $(document).ready(function () {
 
 
             <ul>
-              <li><a href="">Présentation</a></li>
-              <li><a href="">Histoire</a></li>
+              <li><a href="" class="inactif">Présentation</a></li>
+              <li><a href="" class="inactif">Histoire</a></li>
               <li><a href="services.html">Services publics</a></li>
-              <li><a href="">Territoire</a></li>
+              <li><a href="" class="inactif">Territoire</a></li>
             </ul>
           </li>
           <li>
@@ -66,11 +66,11 @@ $(document).ready(function () {
             <a>Sortir et Bouger</a>
             <input type="checkbox" name="" id="btn-2">
             <ul>
-              <li><a href="">Les Espaces Sociaux Culturels</a></li>
-              <li><a href="">Vie sportive</a></li>
-              <li><a href="">Vacances</a></li>
-              <li><a href="">Activités et Loisirs</a></li>
-              <li><a href="">Annuaire des associations</a></li>
+              <li><a href="" class="inactif">Les Espaces Sociaux Culturels</a></li>
+              <li><a href="" class="inactif">Vie sportive</a></li>
+              <li><a href="" class="inactif">Vacances</a></li>
+              <li><a href="" class="inactif">Activités et Loisirs</a></li>
+              <li><a href="" class="inactif">Annuaire des associations</a></li>
             </ul>
           </li>
           <li>
@@ -79,11 +79,11 @@ $(document).ready(function () {
             <input type="checkbox" name="" id="btn-3">
             <ul>
               <li><a href="./gestion.html">Gestions Déchets</a></li>
-              <li><a href="">Espaces Verts</a></li>
-              <li><a href="">Logements</a></li>
+              <li><a href="" class="inactif">Espaces Verts</a></li>
+              <li><a href="" class="inactif">Logements</a></li>
               <li><a href="./transports.html">Transports</a></li>
-              <li><a href="">Eau et Energie</a></li>
-              <li><a href="">Economie et Commerces</a></li>
+              <li><a href="" class="inactif">Eau et Energie</a></li>
+              <li><a href="" class="inactif">Economie et Commerces</a></li>
             </ul>
           </li>
         </ul>
